@@ -1,22 +1,233 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on ExampleSite</title>
-    <link>https://examplesite.com/posts/</link>
-    <description>Recent content in Posts on ExampleSite</description>
-    <image>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>Posts on 风萧古道 - 勤学苦练，年复一年</title>
+    <link>https://windypath.com/posts/</link>
+    <description>Recent content in Posts on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Apr 2022 20:25:50 +0800</lastBuildDate><atom:link href="https://examplesite.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://windypath.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://examplesite.com/posts/my-first-post/</link>
-      <pubDate>Thu, 14 Apr 2022 20:25:50 +0800</pubDate>
+      <title>独立个人项目开发心得 - 任务切分、挑战性、实用性和半途而废</title>
+      <link>https://windypath.com/posts/individual_project_experience/</link>
+      <pubDate>Tue, 05 Apr 2022 18:37:07 +0800</pubDate>
       
-      <guid>https://examplesite.com/posts/my-first-post/</guid>
-      <description>Ceshi wenzhang </description>
+      <guid>https://windypath.com/posts/individual_project_experience/</guid>
+      <description>在写文章前容许我啰嗦一下：对于软件开发，我走了不少弯路，有时觉得自己作为API侠，无所不能，有时又觉得自己很多LeetCode题写不出来，无能为力。我有一个博客，但是写满了自己的絮絮叨叨，真正有本领的东西九牛一毛。
+我甚至没有自己的“代表作”，因为我是一个急性子，想马上得到结果（事实上计算机真能马上给出结果，但开发过程不行）。我经常在“造自己的轮子”和“用别人的轮子”之间徘徊，“造自己的轮子”比较有成就感，但是难度其实很大，需要踩很多别人踩过的坑；“用别人的轮子”则没有什么成就感，做出来也不像是自己做的。而平时工作中，每天都在用别人的轮子，自己真正从比较底层开始实现的情况是非常少的，导致我在闲暇时间也不想用别人的轮子。
+啰嗦一下自己的经历： 2004年，我家买了电脑，我也接触了很多电脑上的游戏。但是也许是我心浮气躁或者没有游戏天赋，我总是在游戏里输，总是追不上邻居小伙伴；
+2008年，我萌生了“自己写一个什么东西”的想法。
+2009年夏，小学毕业的我开始摆弄魔兽地图编辑器，虽然一点脚本都没写，做出来的游戏也粗制滥造。也开始查找“如何创建一个个人网站”。
+2010年，在和初中新同学混熟之后，我们打算做一个班级网站，我找了一圈发现5566和phpwindy有免费的论坛可以注册，我们注册了一个论坛，并且想把每天的作业更新发布上去。但事实上那位同学仅发布过一次作业。
+2011年，我利用爸妈给我的打游戏的时间，将网页保存下来，咬着牙研读里面的html标签，然后给我当时加入的一个魔兽争霸群做了一个纯html的“官网”。在某免费空间上注册了一个只支持asp和基础web的免费空间，用8uFTP把网站上传上去。
+2014年，在学校的图书室，我昧着良心在寻找Dreamweaver的教程书，还真给我找到了。但是我根本没有自己的电脑，只能对着书发呆脑补。
+2015年夏，我高中毕业，填志愿的时候几乎把“软件工程”和“计算机科学与技术”都填的满满的。我查了资料发现“软件工程”比“计算机科学与技术”学费更贵，在询问了父母的意见之后，我把“软件工程”填到了第一位，然后和父母说，一定会考上。最后我考上了一个普通的本科，开始学习软件工程专业。
+2015年暑假，还有一件事情，我自己注册了（已经失效了的）域名，购买了阿里云的虚拟主机，配置了WordPress服务器，在上面写博客文章。仅仅是备份就花了一周，然后终于拿到了自己的备案号。我永远不会忘记第一次用自己的域名打开自己的网站那一刻的快乐。
+2016年春，我推开软件学院大楼某间实验室的大门，然后就我大学一年级就和学长们一起做项目，当时团队里缺人写html页面，而我正好已经算是html css入门了（完全不会js），开始仿写各大网站。然后想自己写一个象棋游戏，结果找资料就找了一个下午，最后不了了之。
+2017年夏，我跟着课程开始研究蚁群算法，最后实现了论文的内容。现在回想起来，对着论文依葫芦画瓢其实没什么技术含量，当打包运行并且在台上汇报之后，我真的觉得很快乐。不过，我并没有学到什么“真才实学”。
+2017年秋，在Java课上，我带领团队（其实开发就我一个人）用Bmob作为后端，安卓作为前端，开发了一个“今日特价” app。我对着github上的一个高仿微博的项目，拼命的抄各种代码。而最后我觉得写的太差，而把代码都删除了，真是太可惜了。
+2018年，我有了很多很多想法，但是都没有执行下去。
+ 我想自己从零搭建一个博客，用新学的SpringMVC，替换掉WordPress。 我想做一个网站，叫做“预言”，简单来说就是让用户发表一些对未来的猜测，并且定一个时间，然后系统到了那个时间会提醒用户确认是否预言成功 我想做一个安卓app，像三国志11一样，将所有三国的人物，历史事件，城池信息，战役，单挑，舌战都完整地汇总在里面，然后再像游戏一样，将“官渡之战”、“赤壁之战”、“夷陵之战”都像三国志11一样活灵活现地展示在地图上。 当时我觉得做网页做系统已经很没有意思了，所以我决定做机器学习，深度学习。 我想考研，因为不太满意自己的双非学历。 那时候LPL竞猜挺火的，我和朋友商量写一个统计各队伍各选手的评分的系统。当时我先用jQuery写了前端，拼命的append html标签，导致我自己写完的时候都不知道自己在写什么。  2019年春，考研没考上，但是数学二确实也让我复习了高数和线代。借助这点基础，我选了一个“手写汉字识别的研究”的题目，然后开始学习吴恩达的机器学习入门，学习深度学习Tensorflow，学习卷积神经网络等等，然后由于自己的电脑的显卡是1050ti，有点不够用，我就花钱去租专门用于训练的服务器，印象中要6块1小时。那时候为了一个好的结果，，花了不少家里的钱。
+2019年春夏之交，我的论文提交给了一个不太懂机器学习的老师，老师一看就觉得我在抄别人的论文。给我的建议是，我要么一意孤行继续这样答辩，但可能延毕；要么就把手写汉字识别改成某个系统，走需求分析，UML设计，数据库设计，开发，测试，结论的框架。当时我感到了深刻的绝望，自信心几乎被击垮，支离破碎。仗着自己之前也曾一个人咬着牙实现过不少系统，我决定把这个算法的研究都丢掉，转用百度提供的手写汉字识别api，包装成一个笔记系统，手写的笔记拍个照就转储成汉字。
+2019年秋，我入职某软件公司，我终于会写Vue了。在之前我总是写jQuery。我甚至以为jQuery是最好的解决方案。也许2015年前是，2015年后就不是了。
+2020年，我虽然是Java开发工程师，但是做了很多很多前端的内容。我被迫花很多时间去调CSS，去抄别人的js来完成移动端的h5网页的展示效果。我感到非常的厌恶，觉得自己的能力被封锁了。领导想弄区块链，想提供API接口给其他公司使用，但现在看来根本没有任何优势，仅仅是困兽之斗。另外，为了能把智能客服的问答预料快速查找，我学习了ElasticSearch数据库的用法。为了爬取一些信息，我学习了Python开发。
+2020年秋，我被“发配”北京，每天都过得很不开心，回家遥遥无期。本来说好的出差一个月，到了地方之后却要求长期驻地开发。而那套系统的代码很乱，找到机会我马上就离职了。
+2021年，我来到上海，接触了游戏服务器开发。我第一次发现服务器是如此的庞大。
+ 我学习了新的架构：Actor架构。 我受到网上的信息“蛊惑”，觉得hibernate已经过时，但在游戏这个场景里，hibernate比mybatis更适合。 我以前不理解Zookeeper到底用来做什么，他们总是只教我存和取，现在我知道可以配置系统信息； 我自学过netty，但是不理解为什么要用netty，现在我知道了，封包解包，NIO这些情况用netty确实快人一步。 我以前觉得mysql能力有限，但是在mysql前加一层缓存的话，速度就会成倍提高。还有索引和主键的配置也是有考究的，慢查询也是可以分析的。并不能武断的认为mysql能力不行。 还有一些完全没听过的，比如protobuf，akka，集群，ticker，在我之前的认知里只有json是唯一通信的结构。  2022年，我回过头来发现，我好像是从2021年之后，才真正打破“啥都会，啥都不会”的尴尬局面。在此之前，我好像什么都会：
+ Web前端：html，css，js基础语法，jQuery的用法，简单的WebPack打包，简单的Vue Java后端：SpringMVC过渡到SpringBoot，MyBatis 移动端：基础的Android开发 数据库：使用过关系型的Oracle，mysql，也使用过非关系型的mongodb和ElasticSearch Python：爬虫相关 服务器：只会简单的java -jar部署，netstat -nlp看端口，然后给我所有的电脑都装好双系统。  又啥都不会：
+ Web前端不会最有技术含量的React Java后端不会hibernate，HashMap的底层逻辑，Java虚拟机的垃圾回收机制都是用背的。 移动端：不会用kotlin写安卓，也不知道最新的安卓有什么内容 数据库：从没有仔细学习mysql背后的存储优化原理，也没有上手实操过 服务器：以为服务器只是java -jar，而没有研究过docker，zookeeper，jenkins等更优秀的工具和中间件。装双系统也就装的那一刻用一下，真要做事还是用虚拟机多开…… 没有研究过消息队列。  总的来说就是，都是浅尝辄止。当跑完hello world，把环境搭起来的时候，我就觉得自己行了，牛了，然后关掉编译器去玩了。
+不过有意思的是，2021年我在10年工作经验的主程面前点开8uFTP的时候，他惊讶地问：“woc你怎么在用这个东西？太老了这个，可以换一下Filezila”。而我会心一笑。后来团队发生了变动，换了个新主程。在闲暇时间我和他攀谈“网页三剑客”，向他展示我2015年就搭建起来的博客，和他开玩笑说，我和他是同一个软件开发时代的人，我是Young OG！
+但也仅此而已了。也许我真的是Young OG，但是我总是缺了点什么很关键的东西。以前我觉得自己不懂坚持，总是半途而废，而现在，在上海工作了一年多之后，我发现我的能力并没有任何问题，我的问题在于不知道怎么将工作切分，不知道怎么保存自己的体力，不知道自己的目标是什么。
+不管是写LeetCode，写项目，还是研究某个新框架，都需要安排时间，都需要统筹自己拥有的资源。特别是写项目，写项目有一点像写小说。只有将小说里每个章节都完成并且有所关联（长篇小说），才能是一部优秀的小说。长篇小说家也不是一朝一夕能写完一部大作，我们软件开发人员自然也不能一朝一夕写好一个系统，更何况我们还需要测试自己的代码。
+所以我们需要对任务进行切分。
+任务切分的方法和意义 最近两三个月，在工作中，我开始使用画图工具来画一些流程图或者架构图。这些图不是标准的UML图，但是是我自己能看懂的图。</description>
+    </item>
+    
+    <item>
+      <title>使用Python实现简单UDP Ping</title>
+      <link>https://windypath.com/posts/simple_udp_ping_with_python/</link>
+      <pubDate>Sat, 13 Nov 2021 15:31:00 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/simple_udp_ping_with_python/</guid>
+      <description>套接字编程作业2：UDP ping 程序 在本实验中，您将学习使用Python进行UDP套接字编程的基础知识。您将学习如何使用UDP套接字发送和接收数据报，以及如何设置适当的套接字超时。在实验中，您将熟悉Ping应用程序及其在计算统计信息（如丢包率）中的作用。
+您首先需要研究一个用Python编写的简单的ping服务器程序，并实现对应的客户端程序。这些程序提供的功能类似于现代操作系统中可用的标准ping程序功能。然而，我们的程序使用更简单的UDP协议，而不是标准互联网控制消息协议（ICMP）来进行通信。 ping协议允许客户端机器发送一个数据包到远程机器，并使远程机器将数据包返回到客户（称为回显）的操作。另外，ping协议允许主机计算它到其他机器的往返时间。
+以下是Ping服务器程序的完整代码。你的任务是写出Ping客户端程序。
+服务器代码 以下代码完整实现了一个ping服务器。您需要在运行客户端程序之前编译并运行此代码。而且您不需要修改此代码。 在这个服务器代码中，30％的客户端的数据包会被模拟丢失。你应该仔细研究这个代码，它将帮助你编写ping客户端。
+# UDPPingerServer.py  # We will need the following module to generate randomized lost packets import random  from socket import * import random  # Create a UDP socket  # Notice the use of SOCK_DGRAM for UDP packets  serverSocket = socket(AF_INET, SOCK_DGRAM) # Assign IP address and port number to socket  serverSocket.bind((&amp;#39;&amp;#39;, 12000))  while True: 	# Generate random number in the range of 0 to 10  	rand = random.</description>
+    </item>
+    
+    <item>
+      <title>使用Python开发一个简单的web服务器</title>
+      <link>https://windypath.com/posts/simple_web_server_with_python/</link>
+      <pubDate>Sun, 07 Nov 2021 21:02:00 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/simple_web_server_with_python/</guid>
+      <description>来自书籍《计算机网络-自顶向下方法-第6版(课本)》第120页，第二章应用层的课后题第一题。
+ 基础题目 题目：在这个编程作业中，你将用Python语言开发一个简单的Web服务器，它仅能处理一个请求。具体而言，你的Web服务器将：（1）当一个客户（浏览器）联系时创建一个连接套接字；（2）从这个连接接收HTTP请求；（3）解释该请求以确定所请求的特定文件；（4）从服务器的文件系统获得请求的文件；（5）创建一个由请求的文件组成的HTTP响应报文，报文前面有首部行；（6）经TCP连接向请求的浏览器发送响应。如果浏览器请求一个在该服务器中不存在的文件，服务器应当返回一个“404 Not Found”差错报文。
+参考或者说学习了github上moranzcw的仓库：Computer-Networking-A-Top-Down-Approach-NOTES的内容，完成了这道题。
+代码https://github.com/moranzcw如下：
+# import socket module from socket import *  serverSocket = socket(AF_INET, SOCK_STREAM) # Prepare a sever socket # Fill in start # 定义ip和端口号，然后bind绑定socket host = &amp;#39;&amp;#39; port = 6789 serverSocket.bind((host, port)) serverSocket.listen(1) # Fill in end while True:  # Establish the connection  print(&amp;#39;Ready to serve...&amp;#39;)  connectionSocket, addr = serverSocket.accept()  # Fill in start #Fill in end  try:  message = connectionSocket.</description>
+    </item>
+    
+    <item>
+      <title>Kotlin手动实现一个最简单的哈希表</title>
+      <link>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</link>
+      <pubDate>Sat, 16 Oct 2021 17:43:32 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</guid>
+      <description>参考的是《数据结构(C语言版)》上256页左右的哈希表的介绍，用了最简单的直接寻址法 + 链地址法。
+用的是Kotlin。
+package main.kotlin  /** * 手动实现简单的hash表 * 简单的数组 +链表 （无红黑树） * 要求哈希函数可配置（被自我否决，太复杂了啦），这次就先做比较简单的 直接定址法 + 链地址法 * * @Date 2021-10-16. * @author Johnathan Lin */  data class Node(  val key: Int, //key  var value: Int, //value  var next: Node? //如果hash值重复了，则用头插法放进去 )  fun main() {  // hash表，这次可为空  val size = 100  val hashArr: Array&amp;lt;Node?&amp;gt; = Array(size) { null }   //插入 假设插入key 8 value 24  println(&amp;#34;插入key 8 value 24&amp;#34;)  set(hashArr, size, 8, 24) { k, s -&amp;gt; k % s }  println(&amp;#34;插入key 108 value 32&amp;#34;)  set(hashArr, size, 108, 32) { k, s -&amp;gt; k % s }  var v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  println(&amp;#34;删除key 108&amp;#34;)  remove(hashArr, size, 108) { k, s -&amp;gt; k % s }  v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  v = get(hashArr, size, 8) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为8: $v&amp;#34;)  }  /** * @param hashFunc 哈希函数 param1：key param2：size */ fun get(hashArr: Array&amp;lt;Node?</description>
+    </item>
+    
+    <item>
+      <title>Kotlin实现二叉堆、大顶堆、优先级队列</title>
+      <link>https://windypath.com/posts/kotlin_implement_heap/</link>
+      <pubDate>Thu, 14 Oct 2021 23:30:30 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/kotlin_implement_heap/</guid>
+      <description>参考了
+https://www.bilibili.com/video/BV11t4y1r79L
+https://blog.csdn.net/qq_19782019/article/details/78301832
+他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。
+package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap&amp;lt;T : Comparable&amp;lt;T&amp;gt;&amp;gt;(  val arr: Array&amp;lt;T&amp;gt;,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(&amp;#34;lastValue:$lastValue&amp;#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0.</description>
+    </item>
+    
+    <item>
+      <title>Unison在Linux下的安装与使用</title>
+      <link>https://windypath.com/posts/unison_install_in_linux/</link>
+      <pubDate>Sat, 22 Feb 2020 14:19:06 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/unison_install_in_linux/</guid>
+      <description>这是一篇在公司写的文档，但不涉及公司隐私。几乎所有内容参考于：https://www.cnblogs.com/welcomer/p/5068287.html
+ 引言 编写目的 编写本文档是为了让读者快速上手使用Unison进行两台Linux服务器文件进行同步。
+前景 Unison是windows和unix平台下都可以使用的双向文件同步工具，它能使两个文件夹（本地或网络上的）保持内容的一致。 unison 拥有其它一些同步工具或文件系统的相同特性，但也有自己的特点：
+ 跨平台使用； 对内核和用户 权限 没有特别要求； unison 是双向的，它能自动 处理两分拷贝中更新没有冲突的部分，有冲突的部分将会显示出来让用户选择更新策略；  只要是能连通的两台主机 ，就可以运行 unison ，可以直接使用 socket 连接或安全的 ssh 连接方式，对带宽 的要求不高，使用类似 rsync 的压缩传输协议。
+Unison双向同步的一个缺点是,对于同名文件在两个同步文件夹中都被修改时,unison是不会去同步的,因为unison无法判断以那个为准。
+定义 本文档介绍如何同步两台服务器，为表述方便，将第一台服务器命名为“服务器1”，操作该服务器的用户为“system1”；将第二台服务器命名为“服务器2”，操作该服务器的用户命名为“system2”。
+参考资料 《使用Unison同步服务器目录》 https://www.cnblogs.com/welcomer/p/5068287.html
+安装与初始化 由于在目录同步时需要跨服务器通过ssh连接，因此不建议使用root用户，建议新建普通用户进行操作。
+在两台或多台服务器之间同步，只需要在第一台服务器上安装Unison，再用scp连接将可执行的unison文件复制到第二台服务器上即可。
+安装Unison 由于使用源码包安装Unison需要安装Ocaml依赖，且Unison默认将文件复制到“/用户名/bin/”目录下，会导致在make install步骤时提示错误，所以建议使用apt-get或yum安装。
+Ubuntu下安装：在配置好阿里云的apt-get源之后，使用sudo apt-get install unison安装。
+CentoOS下安装：使用yum install unison安装。
+将Unison复制到服务器2 使用apt-get或yum安装Unison后，默认放在/usr/bin/unison。
+1、使用ssh连接到远程主机：
+scp /usr/bin/unison root@服务器2的IP地址:/root/ 注意：在Ubuntu下，如果服务器没有安装openssh-server，则无法被其他服务器连接，解决方法：
+ 使用sudo apt-get install openssh-server安装 在/etc/ssh/sshd_config文件中，把将PermitRootLogin prohibie-password 修改为：PermitRootLogin yes 重启ssh服务即可使用。  2、登录服务器2，使用复制命令，将可执行文件unison从/root/移到/usr/bin/下。
+cp /root/unison /usr/bin/ 3、在两台服务器上都输入unison –version，查看是否安装成功。如果返回了版本号，则安装成功。</description>
+    </item>
+    
+    <item>
+      <title>Java实现类似WINSCP访问远程Linux服务器，执行命令、上传文件、下载文件</title>
+      <link>https://windypath.com/posts/java_implement_winscp_like/</link>
+      <pubDate>Thu, 20 Feb 2020 10:32:24 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/java_implement_winscp_like/</guid>
+      <description>pom.xml添加的依赖：
+&amp;lt;!-- https://mvnrepository.com/artifact/ch.ethz.ganymed/ganymed-ssh2 --&amp;gt; &amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;ch.ethz.ganymed&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;ganymed-ssh2&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;262&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 这里注意，不同版本的这玩意用法有差别。这里我使用的是262。
+操作类代码如下：
+import ch.ethz.ssh2.*;  import java.io.*;  /** * @Author: 风萧古道的博客 windypath.com * @Date: 2019/11/29 15:14 */ public class SSHUtil {   // uploadFile to Linux   /** * 上传文件到Linux * * @param ip ip地址 * @param username 登录用户名 * @param password 密码 * @param remoteFilePath 目标文件所在完整目录 * @param file 本地文件File对象 * @return */  public static boolean uploadFile(String ip, String username, String password, String remoteFilePath, File file) {   FileInputStream input = null;  BufferedOutputStream boutput = null;  Connection conn = null;  try {   conn = new Connection(ip);  conn.</description>
+    </item>
+    
+    <item>
+      <title>一个被废弃的项目——自动爬取信息然后发给我自己邮箱上</title>
+      <link>https://windypath.com/posts/a_bad_project_crawler_and_email/</link>
+      <pubDate>Sun, 09 Feb 2020 17:21:03 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/a_bad_project_crawler_and_email/</guid>
+      <description>这是一个python项目。
+使用到的技术包括爬虫和发邮件
+代码如下：
+#!/usr/bin/env python # -*- coding: utf-8 -*- # @Time : 2020/2/5 22:49 # @Author : Johnathan Lin import time import requests import random import json import re from bs4 import BeautifulSoup import smtplib from email.mime.text import MIMEText from email.header import Header from urllib.parse import urljoin from bs4.element import NavigableString  # 第三方 SMTP 服务 mail_host = &amp;#34;smtp.163.com&amp;#34; # 设置服务器 mail_user = &amp;#34;你的邮箱&amp;#34; # 用户名 mail_pass = &amp;#34;你的密码&amp;#34; # 口令  # 发送人和接收人 sender = &amp;#39;你的邮箱&amp;#39; # 自己发给自己就可以了， receivers = [&amp;#39;你的邮箱&amp;#39;] # 接收邮件，可设置为你的QQ邮箱或者其他邮箱  # 爬虫请求头 headers = {  &amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.</description>
+    </item>
+    
+    <item>
+      <title>Python连接MongoDB和Oracle实战</title>
+      <link>https://windypath.com/posts/python_connect_mongodb_and_oracle/</link>
+      <pubDate>Sun, 09 Feb 2020 17:06:29 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/python_connect_mongodb_and_oracle/</guid>
+      <description>Python连接MongoDB 安装 首先要安装pymongo，用pip装一下就好了。
+工具类python文件 以下直接给出我写的mongodb操作类
+#!/usr/bin/env python # -*- coding: utf-8 -*- # @Time : 2019/12/23 14:02 # @Author : Johnathan Lin 林佳庆 &amp;#34;&amp;#34;&amp;#34; 数据导入Mongo模块 &amp;#34;&amp;#34;&amp;#34;  import os  import pymongo  from utils.configReader import read_mongo_config  # 设置编码 os.environ[&amp;#39;NLS_LANG&amp;#39;] = &amp;#39;SIMPLIFIED CHINESE_CHINA.UTF8&amp;#39;   def get_mongodb_collection(collection):  &amp;#34;&amp;#34;&amp;#34; 根据配置文件和数据库和表得到表（collection） :param database: 数据库 :param collection: 表 :return: 表的对象 &amp;#34;&amp;#34;&amp;#34;  mongo_config = read_mongo_config()  client = pymongo.MongoClient(mongo_config[&amp;#39;client&amp;#39;])  db = client[mongo_config[&amp;#39;database&amp;#39;]]  if mongo_config[&amp;#39;auth&amp;#39;] == &amp;#39;True&amp;#39; or mongo_config[&amp;#39;auth&amp;#39;] == &amp;#39;true&amp;#39;:  db.</description>
+    </item>
+    
+    <item>
+      <title>vue和springboot项目部署到Linux服务器</title>
+      <link>https://windypath.com/posts/vue_springboot_deploy_in_linux/</link>
+      <pubDate>Mon, 27 Jan 2020 16:53:23 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/vue_springboot_deploy_in_linux/</guid>
+      <description>写在前面的话 前后端分离的项目中，需要分别部署前端与后端项目。前端项目使用npm打包，将得到的dist文件夹下的内容上传到服务器后，用nginx的alias指向文件夹即可访问，而后端项目使用maven打包，需使用tomcat在后台启动，再通过nginx转发，供前端项目调用。
+打包 前端的打包 前端项目使用的是vue-element-admin的基础版本：vue-admin-template
+根据教程从github上下载后，在webstorm中运行成功。
+原项目中只有前端，但可以完成简单的数据交互，根据使用手册介绍，该项目使用了mockjs模拟数据。
+而我们需要做前后端交互，故不使用mockjs。
+修改为访问后端的路径 方法很简单，在根目录下的.env.development文件下，将VUE_APP_BASE_API改为你的本地后端地址。 .env.development VUE_APP_BASE_API = &amp;#39;http://localhost:8080&amp;#39; 在根目录下的.env.production文件下，将VUE_APP_BASE_API改为你的云服务器的后端地址。
+.env.production # just a flag ENV = &amp;#39;production&amp;#39; # base api VUE_APP_BASE_API = &amp;#39;http://？？？？？？？/springbootdemo&amp;#39; 这里可能会有一些小bug，主要是要与服务器的路径对应起来。
+根据该项目package.json内所设置的，使用npm run build:prod打包，生成dist文件夹 最后得到dist文件夹。 后端的打包 编写接口 首先，编写Controller，写一些接口。
+package com.windypath.demo.controller;  import com.windypath.demo.response.ResponseData; import com.windypath.demo.response.ResponseDataUtil; import org.springframework.web.bind.annotation.RequestMapping; import org.springframework.web.bind.annotation.RestController;  @RequestMapping(&amp;#34;/&amp;#34;) @RestController public class MainController {   @RequestMapping(&amp;#34;/hello&amp;#34;)  public ResponseData hello() {   return ResponseDataUtil.buildSuccess(&amp;#34;hello!&amp;#34;);  }  @RequestMapping(&amp;#34;/&amp;#34;)  public ResponseData root() {   return ResponseDataUtil.</description>
+    </item>
+    
+    <item>
+      <title>Python的一些用法（可能不定时更新）</title>
+      <link>https://windypath.com/posts/some_usages_of_python/</link>
+      <pubDate>Sun, 01 Dec 2019 10:45:46 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/some_usages_of_python/</guid>
+      <description>strip()、lstrip()、和rstrip() Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。
+注意：该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。
+lstrip()就是从左边匹配然后删除字符，rstrip()从右边匹配然后删除字符。
+表面上挺好理解的，但是用起来还是有一些陷阱。
+如：
+if __name__ == &amp;#39;__main__&amp;#39;:  string = &amp;#39;abcdefghijkl&amp;#39;  print(string.lstrip(&amp;#39;bac&amp;#39;))  # 输出 defghijkl 可以看到，虽然左侧开头的&amp;rsquo;abc&amp;rsquo;和&amp;rsquo;bac‘顺序不同，但lstrip()方法依旧将其匹配然后删除了。
+所以如果我只是要删除开头的某一部分，比如获取标签内的字符：
+if __name__ == &amp;#39;__main__&amp;#39;:  string = &amp;#39;&amp;lt;a href=&amp;#34;http://www.windypath.com&amp;#34;&amp;gt;abcde&amp;lt;/a&amp;gt;&amp;#39;  print(string.lstrip(&amp;#39;&amp;lt;a href=&amp;#34;http://www.windypath.com&amp;#34;&amp;gt;&amp;#39;).rstrip(&amp;#39;&amp;lt;/a&amp;gt;&amp;#39;))  # 输出 bcde 就会把标签内容的最左边的a给匹配到了。
+那么如何实现只根据字符顺序，匹配前面的字符呢？
+用正则表达式：re.sub()
+Python 的 re 模块提供了re.sub用于替换字符串中的匹配项。
+语法：
+re.sub(pattern, repl, string, count=0, flags=0) 参数：
+ pattern : 正则中的模式字符串。 repl : 替换的字符串，也可为一个函数。 string : 要被查找替换的原始字符串。 count : 模式匹配后替换的最大次数，默认 0 表示替换所有的匹配。  使用该方法：</description>
+    </item>
+    
+    <item>
+      <title>java正则表达式 - 双反斜杠（\）和Pattern的matches()与find()</title>
+      <link>https://windypath.com/posts/regular_expression/</link>
+      <pubDate>Sun, 24 Nov 2019 19:43:31 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/regular_expression/</guid>
+      <description>参考文献 java正则表达式（find()和 matches()） java正则表达式，求匹配：双反斜杠（\）合法，单反斜杠不合法（\） Java 正则表达式-菜鸟教程 正则表达式-菜鸟教程
+ Pattern类和Matcher类 在Java中，与正则表达式相关的类有两个：Pattern和Matcher
+菜鸟教程已经介绍的很好了。
+ java.util.regex 包主要包括以下三个类：
+ Pattern 类：pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。 Matcher 类：Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。 PatternSyntaxException：PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。   然后菜鸟教程的第一个代码样例如下：
+import java.util.regex.*;  class RegexExample1{  public static void main(String args[]){  String content = &amp;#34;I am noob &amp;#34; +  &amp;#34;from runoob.com.&amp;#34;;   String pattern = &amp;#34;.*runoob.*&amp;#34;;   boolean isMatch = Pattern.</description>
+    </item>
+    
+    <item>
+      <title>简述爬虫对两种网站的不同爬取方式</title>
+      <link>https://windypath.com/posts/two_crawl_web_approach/</link>
+      <pubDate>Fri, 15 Nov 2019 23:05:46 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/two_crawl_web_approach/</guid>
+      <description>爬虫的目的是采集网站的数据。而网站渲染数据有两种方式。我个人将其称为前端渲染和后端渲染。
+前端渲染 前端渲染指的是网页并不直接展示数据，而是在读取完网页之后，再次向服务器请求数据。在得到数据之后再渲染到网页中。
+后端渲染 后端渲染值的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
+爬取方式 目前我并没有使用scrapy、webmagic等爬虫框架，仅使用python的requests模块，json模块和BeautifulSoup框架。
+前端渲染的爬取方式
+步骤：使用requests请求数据，再用json.loads()方法将返回的数据解析，最后操作得到的数据对象即可。
+我们这里以豆瓣为例。
+分析该网页。 爬取的url：
+https://movie.douban.com/explore#!type=movie&amp;amp;tag=%E7%83%AD%E9%97%A8&amp;amp;sort=recommend&amp;amp;page_limit=20&amp;amp;page_start=0
+将url放进浏览器，先点开F12，然后访问。这里我使用谷歌浏览器 可以看到，红框内的All、XHR、JS等。这是一个筛选框，用来筛选该网页请求的数据。
+All代表所有，XHR代表异步请求，JS代表Js文件，Css……
+对于前端渲染，必然有异步的过程，所以选择XHR。
+通过观察，发现第三行是“选电影”列表的数据。 这时，我们点击Headers，查看其请求的详细信息。 可以看到，这是一个Get请求，在下面的Qurey String Parameters可以看到该请求的参数。
+数据对应的网页内容为： 测试这个请求。 浏览器可以发起这个请求得到相应，但我们的代码不一定能做到。有一部分原因是网站开发者本身不希望数据被爬取。所以我们需要测试这个接口。这里推荐Postman，先对接口进行测试，查看是否有些Headers或者参数是不需要的，以简化代码量。
+Postman的用法下回分解吧。
+编写代码。 #!/usr/bin/env python # -*- coding: utf-8 -*- # @Time : 2019/11/15 22:11 # @Author : Johnathan Lin  import requests import json  if __name__ == &amp;#39;__main__&amp;#39;:  # 请求头，一般写上User-Agent防止爬虫，遇到有验证状态的网站要填写Cookie  headers = {  &amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.</description>
     </item>
     
   </channel>

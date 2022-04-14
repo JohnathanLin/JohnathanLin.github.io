@@ -1,0 +1,274 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Kotlin实现二叉堆、大顶堆、优先级队列 | 风萧古道 - 勤学苦练，年复一年</title><meta name=keywords content="Python"><meta name=description content="参考了
+https://www.bilibili.com/video/BV11t4y1r79L
+https://blog.csdn.net/qq_19782019/article/details/78301832
+他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。
+package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap<T : Comparable<T>>(  val arr: Array<T>,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(&#34;lastValue:$lastValue&#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0."><meta name=author content="JohnathanLin"><link rel=canonical href=https://windypath.com/posts/kotlin_implement_heap/><link crossorigin=anonymous href=/assets/css/stylesheet.min.48a18943c2fc15c38a372b8dde1f5e5dc0bc64fa6cb90f5a817d2f8c76b7f3ae.css integrity="sha256-SKGJQ8L8FcOKNyuN3h9eXcC8ZPpsuQ9agX0vjHa3864=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.4dcb3c4f38462f66c6b6137227726f5543cb934cca9788f041c087e374491df2.js integrity="sha256-Tcs8TzhGL2bGthNyJ3JvVUPLk0zKl4jwQcCH43RJHfI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://windypath.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=16x16 href=https://windypath.com/%3Clink%20/%20abs%20url%3E><link rel=icon type=image/png sizes=32x32 href=https://windypath.com/%3Clink%20/%20abs%20url%3E><link rel=apple-touch-icon href=https://windypath.com/%3Clink%20/%20abs%20url%3E><link rel=mask-icon href=https://windypath.com/%3Clink%20/%20abs%20url%3E><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-123-45","auto"),ga("send","pageview"))</script><meta property="og:title" content="Kotlin实现二叉堆、大顶堆、优先级队列"><meta property="og:description" content="参考了
+https://www.bilibili.com/video/BV11t4y1r79L
+https://blog.csdn.net/qq_19782019/article/details/78301832
+他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。
+package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap<T : Comparable<T>>(  val arr: Array<T>,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(&#34;lastValue:$lastValue&#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0."><meta property="og:type" content="article"><meta property="og:url" content="https://windypath.com/posts/kotlin_implement_heap/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-10-14T23:30:30+08:00"><meta property="article:modified_time" content="2021-10-14T23:30:30+08:00"><meta property="og:site_name" content="Windypath"><meta name=twitter:card content="summary"><meta name=twitter:title content="Kotlin实现二叉堆、大顶堆、优先级队列"><meta name=twitter:description content="参考了
+https://www.bilibili.com/video/BV11t4y1r79L
+https://blog.csdn.net/qq_19782019/article/details/78301832
+他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。
+package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap<T : Comparable<T>>(  val arr: Array<T>,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(&#34;lastValue:$lastValue&#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://windypath.com/posts/"},{"@type":"ListItem","position":2,"name":"Kotlin实现二叉堆、大顶堆、优先级队列","item":"https://windypath.com/posts/kotlin_implement_heap/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Kotlin实现二叉堆、大顶堆、优先级队列","name":"Kotlin实现二叉堆、大顶堆、优先级队列","description":"参考了\nhttps://www.bilibili.com/video/BV11t4y1r79L\nhttps://blog.csdn.net/qq_19782019/article/details/78301832\n他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。\npackage main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap\u0026lt;T : Comparable\u0026lt;T\u0026gt;\u0026gt;(  val arr: Array\u0026lt;T\u0026gt;,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(\u0026#34;lastValue:$lastValue\u0026#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0.","keywords":["Python"],"articleBody":"参考了\nhttps://www.bilibili.com/video/BV11t4y1r79L\nhttps://blog.csdn.net/qq_19782019/article/details/78301832\n他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。\npackage main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap(  val arr: Array,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(\"lastValue:$lastValue\")  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0..(size - 1)) {  print(arr[i].toString() + \" \")  }  println()  }   private fun heapDown(p: Int) {  var i = p  while (i  //和左右子节点（如果存在）比大小，如果自己是最大则结束，如果不是，则将自己这个位置换成最大的，然后再从被换的位置继续比  val left = 2 * i + 1  val right = 2 * i + 2  var maxinum = i  if (left \u0026\u0026 arr[maxinum]  maxinum = left  }  if (right \u0026\u0026 arr[maxinum]  maxinum = right  }   if (maxinum == i) {  break  } // println(\"交换i: $i ${arr[i]}, maxinum:$maxinum ${arr[maxinum]}\")  val tmp = arr[i]  arr[i] = arr[maxinum]  arr[maxinum] = tmp  i = maxinum  }  }   private fun heapUp(p: Int) {  //从下往上不停地比较其父节点，比父节点大则交换  var i = p  while (i = 0 \u0026\u0026 arr[i]  arr[(i - 1) / 2]) {  val parentIndex = (i - 1) / 2  val tmp = arr[i]  arr[i] = arr[parentIndex]  arr[parentIndex] = tmp  i = parentIndex  }  } }  //自己定义的类型，实现Comparable接口 data class Data(  val name: String, //名字  val weight: Int //权重 ) : Comparable {  override fun compareTo(other: Data): Int {  return if (weight  other.weight) {  1  } else if (weight  -1  } else {  0  }  }   override fun toString(): String {  return \"${name}-${weight}\"  }  }  fun main() {  //TODO 这里由于Kotlin指定泛型Data为非空，所以要求对每个元素初始化，这步很浪费空间  //TODO 如果改为Array 则很多地方都要判断是否为空  val arr: Array = Array(100) { i - Data(\"null\", i) }  //测试数据  arr[0] = Data(\"Kobe\", 5)  arr[1] = Data(\"James\", 4)  arr[2] = Data(\"Duncan\", 6)  arr[3] = Data(\"Garnett\", 8)  arr[4] = Data(\"Wall\", 2)  arr[5] = Data(\"Nash\", 10)  arr[6] = Data(\"Howard\", 12)  arr[7] = Data(\"Paul\", 3)  arr[8] = Data(\"Anthony\", 7)  arr[9] = Data(\"Yi\", 11)  println(\"构建二叉堆\")  val heap: MaxHeap = MaxHeap(arr, 10)  //将无序的数组构建一个二叉堆  heap.makeHeap()  heap.printHeap()   //加入一个元素，预计这个元素会到堆顶  val added = Data(\"Gasol\", 16)  println(\"添加一个元素${added.toString()}\")  heap.addItem(added)  heap.printHeap()   val removed = heap.removeItem()  println(\"移除了顶部元素${removed.toString()}\")  heap.printHeap()  println(\"finish\")  } 输出结果如下：\n构建二叉堆 Howard-12 Yi-11 Nash-10 Garnett-8 James-4 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 添加一个元素Gasol-16 Gasol-16 Howard-12 Nash-10 Garnett-8 Yi-11 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 James-4 移除了顶部元素Gasol-16 Howard-12 Yi-11 Nash-10 Garnett-8 James-4 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 finish Process finished with exit code 0 然后我将其进行修改，提交到LeetCode，通过，代码如下：\ndata class MaxHeap(  val arr:Array,  var size: Int ) {   fun makeHeap() {  for(i in (size - 1) downTo 0) {  heapDown( i)  }  }   fun heapDown(p: Int) {  var i = p  while(i  // if(i == 0) {  // println(\"i: $i, arr[i] = ${arr[i]}\")  // }  val left = 2 * i + 1  val right = 2 * i + 2  var maxinum = i  if (left \u0026\u0026 arr[maxinum]  maxinum = left  }  if (right \u0026\u0026 arr[maxinum]  maxinum = right  }   if (maxinum == i) {  break  }  // println(\"交换i: $i ${arr[i]}, maxinum:$maxinum ${arr[maxinum]}\")  val tmp = arr[i]  arr[i] = arr[maxinum]  arr[maxinum] = tmp  i = maxinum  }  }   fun heapUp(p: Int) {  var i = p  while (i = 0 \u0026\u0026 arr[i]  arr[(i-1)/2]) {  val parentIndex = (i-1)/2  val tmp = arr[i]  arr[i] = arr[parentIndex]  arr[parentIndex] = tmp  i = parentIndex  }  }   fun addItem(value: T) {  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   fun removeItem():T {  val removeValue = arr[0]  val lastValue = arr[size-1] // println(\"lastValue:$lastValue\")  arr[0] = lastValue  size--  heapDown(0)   return removeValue  } }  data class Data(  val value: Int,  val num: Int ): Comparable {  override fun compareTo(other: Data): Int {  return if (num  other.num) {  1  } else if (num  -1  } else {  0  }  }   override fun toString(): String {  return \"${value}-${num}\"  }  } class Solution {    fun topKFrequent(nums: IntArray, k: Int): IntArray {  val res = IntArray(k);  val arr:Array = Array(nums.size) {i - Data(0, 0)}  // val arr: Array = Array(nums.size) { i - Data(0, 0) }  val maxHeap = MaxHeap(arr, 0)  val map: HashMap= hashMapOf()  nums.forEach { it -  map[it] = map.getOrDefault(it, 0) + 1  }  map.forEach { key, value -  maxHeap.addItem(Data(key, value))  }  for(i in 1..k) {  res[i-1] = maxHeap.removeItem().value  }  return res  } } ","wordCount":"745","inLanguage":"en","datePublished":"2021-10-14T23:30:30+08:00","dateModified":"2021-10-14T23:30:30+08:00","author":{"@type":"Person","name":"JohnathanLin"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://windypath.com/posts/kotlin_implement_heap/"},"publisher":{"@type":"Organization","name":"风萧古道 - 勤学苦练，年复一年","logo":{"@type":"ImageObject","url":"https://windypath.com/%3Clink%20/%20abs%20url%3E"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://windypath.com/ accesskey=h title="Windypath (Alt + H)">Windypath</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://windypath.com/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://windypath.com/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://windypath.com/tags/ title=Tags><span>Tags</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://windypath.com/>Home</a>&nbsp;»&nbsp;<a href=https://windypath.com/posts/>Posts</a></div><h1 class=post-title>Kotlin实现二叉堆、大顶堆、优先级队列</h1><div class=post-meta><span title="2021-10-14 23:30:30 +0800 +0800">October 14, 2021</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;JohnathanLin&nbsp;|&nbsp;<a href=https://github.com/%3cpath_to_repo%3e/content/posts/kotlin_implement_heap.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><p>参考了</p><p><a href=https://www.bilibili.com/video/BV11t4y1r79L>https://www.bilibili.com/video/BV11t4y1r79L</a></p><p><a href=https://blog.csdn.net/qq_19782019/article/details/78301832>https://blog.csdn.net/qq_19782019/article/details/78301832</a></p><p>他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了<a href=https://leetcode-cn.com/problems/top-k-frequent-elements/>Leetcode 347</a>。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=display:flex><span><span style=color:#66d9ef>package</span> main.kotlin
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>/**
+</span></span></span><span style=display:flex><span><span style=color:#75715e> * 二叉堆（大顶堆、优先级队列）
+</span></span></span><span style=display:flex><span><span style=color:#75715e> *
+</span></span></span><span style=display:flex><span><span style=color:#75715e> * @Date 2021-10-14.
+</span></span></span><span style=display:flex><span><span style=color:#75715e> * @author Johnathan Lin
+</span></span></span><span style=display:flex><span><span style=color:#75715e> */</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>data</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MaxHeap</span>&lt;T : Comparable&lt;T&gt;&gt;(
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> arr: Array&lt;T&gt;,
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> size: Int
+</span></span><span style=display:flex><span>) {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//将无序的数组构建一个二叉堆
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>makeHeap</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (i <span style=color:#66d9ef>in</span> (size - <span style=color:#ae81ff>1</span>) downTo <span style=color:#ae81ff>0</span>) {
+</span></span><span style=display:flex><span>      heapDown(i)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//向二叉堆中加入元素
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>addItem</span>(value: T) {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//TODO 添加的边界还未考虑
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>val</span> newIndex = size<span style=color:#f92672>++</span>
+</span></span><span style=display:flex><span>    arr[newIndex] = value
+</span></span><span style=display:flex><span>    heapUp(newIndex)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//移除堆顶元素
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>removeItem</span>(): T {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//TODO 删除的边界还未考虑
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>val</span> removeValue = arr[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>val</span> lastValue = arr[size - <span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span><span style=color:#75715e>//    println(&#34;lastValue:$lastValue&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    arr[<span style=color:#ae81ff>0</span>] = lastValue
+</span></span><span style=display:flex><span>    size<span style=color:#f92672>--</span>
+</span></span><span style=display:flex><span>    heapDown(<span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> removeValue
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>printHeap</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span> (i <span style=color:#66d9ef>in</span> <span style=color:#ae81ff>0.</span>.(size - <span style=color:#ae81ff>1</span>)) {
+</span></span><span style=display:flex><span>      print(arr[i].toString() + <span style=color:#e6db74>&#34; &#34;</span>)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    println()
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>heapDown</span>(p: Int) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> i = p
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (i &lt; size) {
+</span></span><span style=display:flex><span>      <span style=color:#75715e>//和左右子节点（如果存在）比大小，如果自己是最大则结束，如果不是，则将自己这个位置换成最大的，然后再从被换的位置继续比
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>val</span> left = <span style=color:#ae81ff>2</span> * i + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> right = <span style=color:#ae81ff>2</span> * i + <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>var</span> maxinum = i
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (left &lt; size <span style=color:#f92672>&amp;&amp;</span> arr[maxinum] &lt; arr[left]) {
+</span></span><span style=display:flex><span>        maxinum = left
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (right &lt; size <span style=color:#f92672>&amp;&amp;</span> arr[maxinum] &lt; arr[right]) {
+</span></span><span style=display:flex><span>        maxinum = right
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (maxinum <span style=color:#f92672>==</span> i) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span><span style=color:#75715e>//      println(&#34;交换i: $i ${arr[i]}, maxinum:$maxinum ${arr[maxinum]}&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>val</span> tmp = arr[i]
+</span></span><span style=display:flex><span>      arr[i] = arr[maxinum]
+</span></span><span style=display:flex><span>      arr[maxinum] = tmp
+</span></span><span style=display:flex><span>      i = maxinum
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>heapUp</span>(p: Int) {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//从下往上不停地比较其父节点，比父节点大则交换
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>var</span> i = p
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (i <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> arr[i] &gt; arr[(i - <span style=color:#ae81ff>1</span>) / <span style=color:#ae81ff>2</span>]) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> parentIndex = (i - <span style=color:#ae81ff>1</span>) / <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> tmp = arr[i]
+</span></span><span style=display:flex><span>      arr[i] = arr[parentIndex]
+</span></span><span style=display:flex><span>      arr[parentIndex] = tmp
+</span></span><span style=display:flex><span>      i = parentIndex
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>//自己定义的类型，实现Comparable接口
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>data</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Data</span>(
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> name: String, <span style=color:#75715e>//名字
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>val</span> weight: Int <span style=color:#75715e>//权重
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>) : Comparable&lt;Data&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>compareTo</span>(other: Data): Int {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>if</span> (weight &gt; other.weight) {
+</span></span><span style=display:flex><span>      <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (weight &lt; other.weight) {
+</span></span><span style=display:flex><span>      -<span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>      <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>toString</span>(): String {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${name}</span><span style=color:#e6db74>-</span><span style=color:#e6db74>${weight}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>main</span>() {
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//TODO 这里由于Kotlin指定泛型Data为非空，所以要求对每个元素初始化，这步很浪费空间
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#75715e>//TODO 如果改为Array&lt;Data?&gt; 则很多地方都要判断是否为空
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>val</span> arr: Array&lt;Data&gt; = Array(<span style=color:#ae81ff>100</span>) { i <span style=color:#f92672>-&gt;</span> Data(<span style=color:#e6db74>&#34;null&#34;</span>, i) }
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//测试数据
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  arr[<span style=color:#ae81ff>0</span>] = Data(<span style=color:#e6db74>&#34;Kobe&#34;</span>, <span style=color:#ae81ff>5</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>1</span>] = Data(<span style=color:#e6db74>&#34;James&#34;</span>, <span style=color:#ae81ff>4</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>2</span>] = Data(<span style=color:#e6db74>&#34;Duncan&#34;</span>, <span style=color:#ae81ff>6</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>3</span>] = Data(<span style=color:#e6db74>&#34;Garnett&#34;</span>, <span style=color:#ae81ff>8</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>4</span>] = Data(<span style=color:#e6db74>&#34;Wall&#34;</span>, <span style=color:#ae81ff>2</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>5</span>] = Data(<span style=color:#e6db74>&#34;Nash&#34;</span>, <span style=color:#ae81ff>10</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>6</span>] = Data(<span style=color:#e6db74>&#34;Howard&#34;</span>, <span style=color:#ae81ff>12</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>7</span>] = Data(<span style=color:#e6db74>&#34;Paul&#34;</span>, <span style=color:#ae81ff>3</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>8</span>] = Data(<span style=color:#e6db74>&#34;Anthony&#34;</span>, <span style=color:#ae81ff>7</span>)
+</span></span><span style=display:flex><span>  arr[<span style=color:#ae81ff>9</span>] = Data(<span style=color:#e6db74>&#34;Yi&#34;</span>, <span style=color:#ae81ff>11</span>)
+</span></span><span style=display:flex><span>  println(<span style=color:#e6db74>&#34;构建二叉堆&#34;</span>)
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> heap: MaxHeap&lt;Data&gt; = MaxHeap(arr, <span style=color:#ae81ff>10</span>)
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//将无序的数组构建一个二叉堆
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  heap.makeHeap()
+</span></span><span style=display:flex><span>  heap.printHeap()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>//加入一个元素，预计这个元素会到堆顶
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#66d9ef>val</span> added = Data(<span style=color:#e6db74>&#34;Gasol&#34;</span>, <span style=color:#ae81ff>16</span>)
+</span></span><span style=display:flex><span>  println(<span style=color:#e6db74>&#34;添加一个元素</span><span style=color:#e6db74>${added.toString()}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>  heap.addItem(added)
+</span></span><span style=display:flex><span>  heap.printHeap()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> removed = heap.removeItem()
+</span></span><span style=display:flex><span>  println(<span style=color:#e6db74>&#34;移除了顶部元素</span><span style=color:#e6db74>${removed.toString()}</span><span style=color:#e6db74>&#34;</span>)
+</span></span><span style=display:flex><span>  heap.printHeap()
+</span></span><span style=display:flex><span>  println(<span style=color:#e6db74>&#34;finish&#34;</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>输出结果如下：</p><pre tabindex=0><code>构建二叉堆
+Howard-12 Yi-11 Nash-10 Garnett-8 James-4 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 
+添加一个元素Gasol-16
+Gasol-16 Howard-12 Nash-10 Garnett-8 Yi-11 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 James-4 
+移除了顶部元素Gasol-16
+Howard-12 Yi-11 Nash-10 Garnett-8 James-4 Kobe-5 Duncan-6 Paul-3 Anthony-7 Wall-2 
+finish
+
+Process finished with exit code 0
+</code></pre><p>然后我将其进行修改，提交到LeetCode，通过，代码如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-kotlin data-lang=kotlin><span style=display:flex><span><span style=color:#66d9ef>data</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>MaxHeap</span>&lt;T:Comparable&lt;T&gt;&gt;(
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> arr:Array&lt;T&gt;,
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>var</span> size: Int
+</span></span><span style=display:flex><span>) {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>makeHeap</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(i <span style=color:#66d9ef>in</span> (size - <span style=color:#ae81ff>1</span>) downTo <span style=color:#ae81ff>0</span>) {
+</span></span><span style=display:flex><span>      heapDown( i)
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>heapDown</span>(p: Int) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> i = p
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span>(i &lt; size) {
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//   if(i == 0) {
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>//     println(&#34;i: $i, arr[i] = ${arr[i]}&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#75715e>//   }
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>val</span> left = <span style=color:#ae81ff>2</span> * i + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> right = <span style=color:#ae81ff>2</span> * i + <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>var</span> maxinum = i
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (left &lt; size <span style=color:#f92672>&amp;&amp;</span> arr[maxinum] &lt; arr[left]) {
+</span></span><span style=display:flex><span>        maxinum = left
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (right &lt; size <span style=color:#f92672>&amp;&amp;</span> arr[maxinum] &lt; arr[right]) {
+</span></span><span style=display:flex><span>        maxinum = right
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>if</span> (maxinum <span style=color:#f92672>==</span> i) {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>break</span>
+</span></span><span style=display:flex><span>      }
+</span></span><span style=display:flex><span>    <span style=color:#75715e>//   println(&#34;交换i: $i ${arr[i]}, maxinum:$maxinum ${arr[maxinum]}&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>      <span style=color:#66d9ef>val</span> tmp = arr[i]
+</span></span><span style=display:flex><span>      arr[i] = arr[maxinum]
+</span></span><span style=display:flex><span>      arr[maxinum] = tmp
+</span></span><span style=display:flex><span>      i = maxinum
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>heapUp</span>(p: Int) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> i = p
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span> (i <span style=color:#f92672>&gt;=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>&amp;&amp;</span> arr[i] &gt; arr[(i-<span style=color:#ae81ff>1</span>)/<span style=color:#ae81ff>2</span>]) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> parentIndex = (i-<span style=color:#ae81ff>1</span>)/<span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>val</span> tmp = arr[i]
+</span></span><span style=display:flex><span>      arr[i] = arr[parentIndex]
+</span></span><span style=display:flex><span>      arr[parentIndex] = tmp
+</span></span><span style=display:flex><span>      i = parentIndex
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>addItem</span>(value: T) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>val</span> newIndex = size<span style=color:#f92672>++</span>
+</span></span><span style=display:flex><span>    arr[newIndex] = value
+</span></span><span style=display:flex><span>    heapUp(newIndex)
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>removeItem</span>():T {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>val</span> removeValue = arr[<span style=color:#ae81ff>0</span>]
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>val</span> lastValue = arr[size-<span style=color:#ae81ff>1</span>]
+</span></span><span style=display:flex><span><span style=color:#75715e>//    println(&#34;lastValue:$lastValue&#34;)
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    arr[<span style=color:#ae81ff>0</span>] = lastValue
+</span></span><span style=display:flex><span>    size<span style=color:#f92672>--</span>
+</span></span><span style=display:flex><span>    heapDown(<span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> removeValue
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>data</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Data</span>(
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> value: Int,
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>val</span> num: Int
+</span></span><span style=display:flex><span>): Comparable&lt;Data&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>compareTo</span>(other: Data): Int {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>if</span> (num &gt; other.num) {
+</span></span><span style=display:flex><span>      <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (num &lt; other.num) {
+</span></span><span style=display:flex><span>      -<span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>      <span style=color:#ae81ff>0</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>toString</span>(): String {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;</span><span style=color:#e6db74>${value}</span><span style=color:#e6db74>-</span><span style=color:#e6db74>${num}</span><span style=color:#e6db74>&#34;</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Solution</span> {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>fun</span> <span style=color:#a6e22e>topKFrequent</span>(nums: IntArray, k: Int): IntArray {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>val</span> res = IntArray(k);
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>val</span> arr:Array&lt;Data&gt; = Array(nums.size)  {i <span style=color:#f92672>-&gt;</span> Data(<span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>)}
+</span></span><span style=display:flex><span>        <span style=color:#75715e>//  val arr: Array&lt;Data&gt; = Array(nums.size) { i -&gt; Data(0, 0) }
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>        <span style=color:#66d9ef>val</span> maxHeap = MaxHeap(arr, <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>val</span> map: HashMap&lt;Int, Int&gt; = hashMapOf()
+</span></span><span style=display:flex><span>        nums.forEach { <span style=color:#66d9ef>it</span> <span style=color:#f92672>-&gt;</span>
+</span></span><span style=display:flex><span>            map[<span style=color:#66d9ef>it</span>] = map.getOrDefault(<span style=color:#66d9ef>it</span>, <span style=color:#ae81ff>0</span>) + <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        map.forEach { key, value <span style=color:#f92672>-&gt;</span>
+</span></span><span style=display:flex><span>            maxHeap.addItem(Data(key, value))
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>for</span>(i <span style=color:#66d9ef>in</span> <span style=color:#ae81ff>1.</span>.k) {
+</span></span><span style=display:flex><span>            res[i-<span style=color:#ae81ff>1</span>] = maxHeap.removeItem().value
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> res
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://windypath.com/tags/python/>Python</a></li></ul><nav class=paginav><a class=prev href=https://windypath.com/posts/kotlin_implement_a_simple_hashmap/><span class=title>« Prev Page</span><br><span>Kotlin手动实现一个最简单的哈希表</span></a>
+<a class=next href=https://windypath.com/posts/unison_install_in_linux/><span class=title>Next Page »</span><br><span>Unison在Linux下的安装与使用</span></a></nav></footer></article></main><footer class=footer><span>Windypath 风萧古道 <a href=https://beian.miit.gov.cn/>闽ICP备15016446号-3</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
