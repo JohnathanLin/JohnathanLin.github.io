@@ -6,7 +6,22 @@
     <description>Recent content in 技术文章 on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Apr 2022 11:18:21 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Mybatis]逆向工程中Select语句查询不出‘TEXT’字段</title>
+      <link>https://windypath.com/posts/mybatis_text_not_queried/</link>
+      <pubDate>Fri, 15 Apr 2022 11:18:21 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/mybatis_text_not_queried/</guid>
+      <description>这个标题有点奇怪。不过我要说的就是，在Mybatis逆向工程自动生成的Mapper中，对TEXT字段的定义和其他的字段不一样。
+Comments表设计： 可以看到，content字段为TEXT。
+然而，直接调用selectByExample()方法，查询不到content字段的内容： 而究其原因，是因为在自动生成的CommentsMapper.xml中，对TEXT字段的定义是不一样的。
+&amp;lt;resultMap id=&amp;#34;BaseResultMap&amp;#34; type=&amp;#34;com.windypath.seer.pojo.Comments&amp;#34;&amp;gt;  &amp;lt;id column=&amp;#34;id&amp;#34; jdbcType=&amp;#34;INTEGER&amp;#34; property=&amp;#34;id&amp;#34; /&amp;gt;  &amp;lt;result column=&amp;#34;uid&amp;#34; jdbcType=&amp;#34;INTEGER&amp;#34; property=&amp;#34;uid&amp;#34; /&amp;gt;  &amp;lt;result column=&amp;#34;aid&amp;#34; jdbcType=&amp;#34;INTEGER&amp;#34; property=&amp;#34;aid&amp;#34; /&amp;gt;  &amp;lt;result column=&amp;#34;floor&amp;#34; jdbcType=&amp;#34;INTEGER&amp;#34; property=&amp;#34;floor&amp;#34; /&amp;gt;  &amp;lt;result column=&amp;#34;createDate&amp;#34; jdbcType=&amp;#34;TIMESTAMP&amp;#34; property=&amp;#34;createDate&amp;#34; /&amp;gt;  &amp;lt;result column=&amp;#34;isDeleted&amp;#34; jdbcType=&amp;#34;INTEGER&amp;#34; property=&amp;#34;isDeleted&amp;#34; /&amp;gt;  &amp;lt;/resultMap&amp;gt;  &amp;lt;resultMap extends=&amp;#34;BaseResultMap&amp;#34; id=&amp;#34;ResultMapWithBLOBs&amp;#34; type=&amp;#34;com.windypath.seer.pojo.Comments&amp;#34;&amp;gt;  &amp;lt;result column=&amp;#34;content&amp;#34; jdbcType=&amp;#34;LONGVARCHAR&amp;#34; property=&amp;#34;content&amp;#34; /&amp;gt;  &amp;lt;/resultMap&amp;gt; 在代码中可以清晰地看到，content字段放在了“extends”里，而没有和其他的字段放在一起。jdbcType也定义成了LONGVARCHAR，我认为这样做是担心这个字段里装的数据量过大，增加查询负担，所以把它放进extends里。
+而selectByExample()的初衷也许是查找信息列表。我发现在selectByPrimaryKey()中，只查询某一条数据的情况下，TEXT字段就会被查询出来。
+因此我将TEXT改成了varchar(1000)，问题解决。
+（逆向工程修改后要重新生成一次覆盖旧的东西！） </description>
+    </item>
+    
     <item>
       <title>独立个人项目开发心得 - 任务切分、挑战性、实用性和半途而废</title>
       <link>https://windypath.com/posts/individual_project_experience/</link>
@@ -67,6 +82,29 @@
 参考或者说学习了github上moranzcw的仓库：Computer-Networking-A-Top-Down-Approach-NOTES的内容，完成了这道题。
 代码https://github.com/moranzcw如下：
 # import socket module from socket import *  serverSocket = socket(AF_INET, SOCK_STREAM) # Prepare a sever socket # Fill in start # 定义ip和端口号，然后bind绑定socket host = &amp;#39;&amp;#39; port = 6789 serverSocket.bind((host, port)) serverSocket.listen(1) # Fill in end while True:  # Establish the connection  print(&amp;#39;Ready to serve...&amp;#39;)  connectionSocket, addr = serverSocket.accept()  # Fill in start #Fill in end  try:  message = connectionSocket.</description>
+    </item>
+    
+    <item>
+      <title>搭建Spark实战环境（3台linux虚拟机集群）（一）样板机的搭建</title>
+      <link>https://windypath.com/posts/build_spark_environment/</link>
+      <pubDate>Sat, 23 May 2020 17:42:09 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/build_spark_environment/</guid>
+      <description>系统及软件配置 系统配置 内存：16g 2400 cpu：i5 9400F
+软件配置  Windows 10 1903版本 VMware workstation 15.10 CentOS centos-release-7-7.1908.0.el7.centos.x86_64 Java jdk-8u241-linux-x64.tar.gz Scala scala-2.11.8.tgz  值得一提的是，win10 1903版本与VMware 15.10之前的版本不兼容，会出现卡死（虚拟机繁忙）的问题，该问题在15.10版本解决。 资源来源于网络： VMware 15.10 链接：https://pan.baidu.com/s/1bpF3M1V3qPydQgGl-hUC1g 提取码：sb8t CentOS 7.7 链接：https://pan.baidu.com/s/1xFOlCvNrmXXwciVNOL2Pew 提取码：wxdx Java jdk-8u241-linux-x64.tar.gz 链接：https://pan.baidu.com/s/1E1TyObvyO6iQUW44lTCqDQ 提取码：6xw9 Scala scala-2.11.8.tgz 链接：https://pan.baidu.com/s/1TQB-wnffHh0i2aqzzfSi6A 提取码：iowh
+安装前的准备 查看Windows下的网络配置 以Windows 10 1903为例（windows下控制台输入“winver”可以看自己windows版本），在控制面板-&amp;gt;网络和Internet-&amp;gt;网络连接中，可以看到本机上的网络配置。本次搭建这个集群，我们需要虚拟机和物理机（也就是windows）共用一个网络，所以需要使用桥接模式。 本人电脑联网时使用的是这个WLAN 2，它使用的网卡是Realtek 8821AE &amp;hellip;. 的，记住这个名字。
+配置VMware 虚拟网络编辑器 使用管理员权限打开VMware，菜单栏的编辑-&amp;gt;虚拟网络适配器：将桥接模式的“桥接到”指向刚才记下的Realtek 8821AE，点击确定保存配置。 同时还要记住我WLAN 2这张网卡的网络配置信息：（windows cmd输入ipconfig查看） 集群及网络配置 根据刚才WLAN 2网络配置信息可知，我的虚拟机的网卡只能配置为192.168.3.***。 你得根据自己网卡上的网络配置去修改虚拟机网卡配置。
+   序号 IP地址 机器名 运行进程 核数/内存 用户名     1 192.</description>
+    </item>
+    
+    <item>
+      <title>Springboot操作MongoDB，包括增改查及复杂操作</title>
+      <link>https://windypath.com/posts/spring_operate_mongodb/</link>
+      <pubDate>Tue, 19 May 2020 12:41:37 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/spring_operate_mongodb/</guid>
+      <description>单条件查询 使用BasicDBObject配置查询条件
+ List&amp;lt;AbstractMongoEntity&amp;gt; list = Lists.newArrayList();  // 配置查询条件  BasicDBObject cond1 = new BasicDBObject();  cond1.append(&amp;#34;_id&amp;#34;, new ObjectId(&amp;#34;5de39f20684014f1d8b8fa37&amp;#34;));  FindIterable&amp;lt;Document&amp;gt; findIterable = 	// 执行查询 	mongoTemplate.getCollection(&amp;#34;crawler_cjwt&amp;#34;).find(cond1); 	// 装配查询结果  MongoCursor&amp;lt;Document&amp;gt; cursor = findIterable.iterator();  Document document = null;  CjwtMongoEntity question = null;  while (cursor.hasNext()) {  document = cursor.next();  // 使用MongoConverter可以将结果对象映射到Java Bean  question = mongoConverter.read(CjwtMongoEntity.class, document);  list.add(question);  }  System.out.println(question);  cursor.</description>
     </item>
     
     <item>
@@ -204,6 +242,75 @@ All代表所有，XHR代表异步请求，JS代表Js文件，Css……
 数据对应的网页内容为： 测试这个请求。 浏览器可以发起这个请求得到相应，但我们的代码不一定能做到。有一部分原因是网站开发者本身不希望数据被爬取。所以我们需要测试这个接口。这里推荐Postman，先对接口进行测试，查看是否有些Headers或者参数是不需要的，以简化代码量。
 Postman的用法下回分解吧。
 编写代码。 #!/usr/bin/env python # -*- coding: utf-8 -*- # @Time : 2019/11/15 22:11 # @Author : Johnathan Lin  import requests import json  if __name__ == &amp;#39;__main__&amp;#39;:  # 请求头，一般写上User-Agent防止爬虫，遇到有验证状态的网站要填写Cookie  headers = {  &amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.</description>
+    </item>
+    
+    <item>
+      <title>Vue的路由配置及手动改地址栏为啥又跳转回来？？</title>
+      <link>https://windypath.com/posts/why_vue_router_back/</link>
+      <pubDate>Tue, 05 Mar 2019 20:22:47 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/why_vue_router_back/</guid>
+      <description>​ vue-cli（vue脚手架）超详细教程：vue-cli（vue脚手架）超详细教程_Yin_Xiaobo的博客-CSDN博客_vue-cli(vue脚手架)超详细教程
+这个教程里面是使用 vue init webpack app-name，但官方文档中建议的命令是 vue create app-name
+但这两个命令创建的项目是有些不一样的，vue init是版本2的方法，vue create是版本3的方法。但网上搜索了一圈，有人说两种方法都是vue.js + webpack结合的。
+当然了现在还不是很熟悉babel，所以根本看不懂。。
+这回我使用vue init webpack vue-demo，一阵操作之后，得到： 这样的一个结构。注意，src/router下有个index.js，里面装着路由：
+import Vue from &amp;#39;vue&amp;#39; import Router from &amp;#39;vue-router&amp;#39; import HelloWorld from &amp;#39;@/components/HelloWorld&amp;#39;  Vue.use(Router)  export default new Router({  routes: [  {  path: &amp;#39;/&amp;#39;,  name: &amp;#39;HelloWorld&amp;#39;,  component: HelloWorld  }  ] }) 同时在components文件夹下有一个 HelloWorld.vue，里面装着一个模板文件。
+注意到在/src/router/index.js里，第三行引入了HelloWorld的component，然后放在路由中，根目录指向的component。
+所以在执行npm run dev之后，就可以直接打开HelloWorld了。 这个页面就是通过根目录的路由得到的。
+然后我们添加一个路由：
+import Vue from &amp;#39;vue&amp;#39; import Router from &amp;#39;vue-router&amp;#39; import HelloWorld from &amp;#39;@/components/HelloWorld&amp;#39; import About from &amp;#39;@/components/About&amp;#39; Vue.</description>
+    </item>
+    
+    <item>
+      <title>[JavaScript]JS基础知识</title>
+      <link>https://windypath.com/posts/javascript_basic_knowledge/</link>
+      <pubDate>Wed, 06 Jun 2018 21:32:09 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/javascript_basic_knowledge/</guid>
+      <description>[JavaScript]JS基础知识（上） 变量类型及计算 变量类型 值类型 vs 引用类型
+值类型：
+var a = 100 var b = a a = 200 console.log(b) //100 引用类型：
+var a = {age:20} var b = a b.age = 21 console.log(a.age) //21 引用类型：对象、数组和函数
+特点：无限扩展属性，内存占用可能过大，故共用内存空间以节省空间
+Typeof运算符详解 typeof undefined	//undefined typeof &amp;#39;abc&amp;#39;	//string typeof 123	//number typeof true	//boolean typeof {}	//object typeof []	//object typeof null	//object typeof console.log	//function 注：null也是对象
+1~4行是值类型，5~8行是引用类型，但JS只能区分函数与非函数，而不能区分数组和对象。
+变量计算 强制类型转换 字符串拼接 var a = 100 + 10 var b = 100 + &amp;#39;10&amp;#39; console.</description>
+    </item>
+    
+    <item>
+      <title>[编译原理]FIRST、FOLLOW和SELECT</title>
+      <link>https://windypath.com/posts/compilation_principle_first_follow_select/</link>
+      <pubDate>Mon, 30 Apr 2018 16:23:34 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/compilation_principle_first_follow_select/</guid>
+      <description>FIRST集 FIRST(α)为α的开始符号集或者首符号集。
+定义 设G=(VT，VN，S，P)是上下文无关文法 ，FIRST(α)={a|α能推导出aβ,a∈VT，α,β∈V*} 。
+特别的，若α能推导出ε,则规定ε∈FIRST(α)．
+VT为终结符集，VN为非终结符集，S称作识别符或开始符，P为规则(α→β)的集合。
+根据定义求解FIRST集 （对每一文法符号X∈V 计算FIRST(X)）
+若X∈VT，则FIRST(X)={X}； 若X∈VN，且有产生式X→a&amp;hellip;，则把a加入到FIRST(X)中； 若X∈VN，X→ε也是一条产生式，则把ε也加到FIRST(X)中； 若X→Y&amp;hellip;是一个产生式且Y∈VN，则把FIRST(Y)中的所有非ε元素都加到FIRST(X)中； 若X→Y1 Y2 &amp;hellip; Yk是一个产生式，Y1，Y2，&amp;hellip;Y（i-1）都∈VN（1≤i≤K），而且，对于任何j(1≤j≤i-1)，FIRST(Yj)都含有ε （即Y1&amp;hellip;Y(i-1)=&amp;gt;*ε），则把FIRST(Yj)中的所有非ε元素和FIRST(Yi)中的所有元素都加到FIRST(X)中； 特别是，若所有的FIRST(Yj，j=1,2,..,K)均含有ε，则把ε加到FIRST(X)中。
+反复使用上述2~5步，直到每个符号的FIRST集合不再增大为止。
+FOLLOW集 FOLLOW(A)为非终结符A的后跟符号集合。
+定义 设G=(VT，VN，S，P)是上下文无关文法，A∈VN，S是开始符号， FOLLOW(A)=｛a|S能推导出μAβ,且a∈VT，a∈FIRST(β),μ∈VT* ,β∈V+｝，若S能推导出μAβ,且β能推导出ε, 则#∈FOLLOW(A)。 也可定义为：FOLLOW(A)={a|S能推导出…Aa…,a ∈VT} ，若有S能推导出…A，则规定#∈FOLLOW(A) ，这里我们用‘#’作为输入串的结束符。
+计算FOLLOW集 任何FOLLOW(S)都包含输入终止符号#,其中S是开始符号 如果存在产生式,A-&amp;gt;αBβ,则将FIRST(β)中除ε以外的符号都放入FOLLOW(B)中 如果存在产生式,A-&amp;gt;αB,或A-&amp;gt;αBβ,其中FIRST(β)中包含ε,则将FOLLOW(A)中的所有符号都放入FOLLOW(B)中.
+SELECT集 SELECT集是选择符号集。
+定义及计算过程 给定上下文无关文法的产生式A→α, A∈VN,α∈V*, 若α不能推导出ε,则SELECT(A→α)=FIRST(α) 如果α能推导出ε则：SELECT(A→α)=（FIRST(α) –{ε}）∪FOLLOW(A) 需要注意的是，SELECT集是针对产生式而言的。
+例题 《编译原理》第三版，p100页，第2题：
+对下面的文法G： E→TE‘ E‘→+E|ε T→FT&#39; T‘→T|ε F→PF&#39; F&amp;rsquo;→*F&amp;rsquo;|ε P→(E)|a|b|^
+问：
+ 计算这个文法的每个非终结符的FIRST集和FOLLOW集。 证明这个文法是LL(1)的。 构造它的预测分析表。 构造它的递归下降分析程序。  答：
+1.计算这个文法的每个非终结符的FIRST集和FOLLOW集。
+FIRST(P) = {a,b,(,^} FIRST(F) = FIRST(P) = {a,b,(,^} FIRST(T) = FIRST(F) = {a,b,(,^} FIRST(E) = FIRST(T) = {a,b,(,^} FIRST(E&amp;rsquo;) = {+,ε} FIRST(T&amp;rsquo;) = FIRST(T) ∪ {ε} = {a,b,(,^,ε} FIRST(F&amp;rsquo;) = {*,ε}</description>
+    </item>
+    
+    <item>
+      <title>[Spring]Spring学习笔记</title>
+      <link>https://windypath.com/posts/spring_learning_notes/</link>
+      <pubDate>Sat, 14 Apr 2018 15:17:52 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/spring_learning_notes/</guid>
+      <description>[Spring]Spring学习笔记（一） Spring 概念  spring是开源轻量级框架   AOP：面向切面编程，扩展功能不是修改源代码实现 IOC ：控制反转，有一个类，在类里面有方法（不是静态方法） 把对象的创建通过spring配置创建类对象   一站式框架 三层：  web层 springMVC Service层 ioc Dao层 jdbcTemplate   spring版本 当前最新版本：https://projects.spring.io/spring-framework/#quick-start 官网建议用Maven/Gradle安装  Spring的ioc操作  把对象的创建交给spring进行管理 ioc操作两部分：  Ioc的配置文件方式 Ioc的注解方式    IOC底层原理  ioc底层原理使用技术  xml配置文件 Dom4j解决xml 工厂设计模式 反射    IOC使用方法（简单样例）：  导入jar包（用Maven/Gradle直接导入） 编写要操作的类（简单的User类） 创建Spring配置文件，通过配置创建类：  在src下创建xml文件，官方建议为applicationContext.xml 引入schema约束，来源：https://docs.spring.io/spring/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html 要加入的代码 配置对象创建 &amp;lt;bean id=&amp;#34;对象名&amp;#34; class=&amp;#34;类的路径（org.springframework.abcdef）&amp;#34;&amp;gt;&amp;lt;/bean&amp;gt;  编写测试代码   import org.junit.Test;  import org.</description>
     </item>
     
   </channel>
