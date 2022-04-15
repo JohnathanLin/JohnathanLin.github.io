@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>开发 on 风萧古道 - 勤学苦练，年复一年</title>
-    <link>https://windypath.com/tags/%E5%BC%80%E5%8F%91/</link>
+    <link>https://johnathanlin.github.io/tags/%E5%BC%80%E5%8F%91/</link>
     <description>Recent content in 开发 on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://windypath.com/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://johnathanlin.github.io/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>独立个人项目开发心得 - 任务切分、挑战性、实用性和半途而废</title>
-      <link>https://windypath.com/posts/individual_project_experience/</link>
+      <link>https://johnathanlin.github.io/posts/individual_project_experience/</link>
       <pubDate>Tue, 05 Apr 2022 18:37:07 +0800</pubDate>
       
-      <guid>https://windypath.com/posts/individual_project_experience/</guid>
+      <guid>https://johnathanlin.github.io/posts/individual_project_experience/</guid>
       <description>在写文章前容许我啰嗦一下：对于软件开发，我走了不少弯路，有时觉得自己作为API侠，无所不能，有时又觉得自己很多LeetCode题写不出来，无能为力。我有一个博客，但是写满了自己的絮絮叨叨，真正有本领的东西九牛一毛。
 我甚至没有自己的“代表作”，因为我是一个急性子，想马上得到结果（事实上计算机真能马上给出结果，但开发过程不行）。我经常在“造自己的轮子”和“用别人的轮子”之间徘徊，“造自己的轮子”比较有成就感，但是难度其实很大，需要踩很多别人踩过的坑；“用别人的轮子”则没有什么成就感，做出来也不像是自己做的。而平时工作中，每天都在用别人的轮子，自己真正从比较底层开始实现的情况是非常少的，导致我在闲暇时间也不想用别人的轮子。
 啰嗦一下自己的经历： 2004年，我家买了电脑，我也接触了很多电脑上的游戏。但是也许是我心浮气躁或者没有游戏天赋，我总是在游戏里输，总是追不上邻居小伙伴；

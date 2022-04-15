@@ -2,84 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://windypath.com/categories/</loc>
+    <loc>https://johnathanlin.github.io/categories/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/</loc>
+    <loc>https://johnathanlin.github.io/posts/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/</loc>
+    <loc>https://johnathanlin.github.io/tags/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://johnathanlin.github.io/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <loc>https://johnathanlin.github.io/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/%E7%8B%AC%E7%AB%8B%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://johnathanlin.github.io/tags/%E7%8B%AC%E7%AB%8B%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/individual_project_experience/</loc>
+    <loc>https://johnathanlin.github.io/posts/individual_project_experience/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/</loc>
+    <loc>https://johnathanlin.github.io/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/python/</loc>
+    <loc>https://johnathanlin.github.io/tags/python/</loc>
     <lastmod>2021-11-13T15:31:00+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/udp/</loc>
+    <loc>https://johnathanlin.github.io/tags/udp/</loc>
     <lastmod>2021-11-13T15:31:00+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/simple_udp_ping_with_python/</loc>
+    <loc>https://johnathanlin.github.io/posts/simple_udp_ping_with_python/</loc>
     <lastmod>2021-11-13T15:31:00+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://johnathanlin.github.io/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2021-11-13T15:31:00+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/simple_web_server_with_python/</loc>
+    <loc>https://johnathanlin.github.io/posts/simple_web_server_with_python/</loc>
     <lastmod>2021-11-07T21:02:00+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/hashmap/</loc>
+    <loc>https://johnathanlin.github.io/tags/hashmap/</loc>
     <lastmod>2021-10-16T17:43:32+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/tags/kotlin/</loc>
+    <loc>https://johnathanlin.github.io/tags/kotlin/</loc>
     <lastmod>2021-10-16T17:43:32+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</loc>
+    <loc>https://johnathanlin.github.io/posts/kotlin_implement_a_simple_hashmap/</loc>
     <lastmod>2021-10-16T17:43:32+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://johnathanlin.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2021-10-16T17:43:32+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/kotlin_implement_heap/</loc>
+    <loc>https://johnathanlin.github.io/posts/kotlin_implement_heap/</loc>
     <lastmod>2021-10-14T23:30:30+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/unison_install_in_linux/</loc>
+    <loc>https://johnathanlin.github.io/posts/unison_install_in_linux/</loc>
     <lastmod>2020-02-22T14:19:06+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/java_implement_winscp_like/</loc>
+    <loc>https://johnathanlin.github.io/posts/java_implement_winscp_like/</loc>
     <lastmod>2020-02-20T10:32:24+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/a_bad_project_crawler_and_email/</loc>
+    <loc>https://johnathanlin.github.io/posts/a_bad_project_crawler_and_email/</loc>
     <lastmod>2020-02-09T17:21:03+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/python_connect_mongodb_and_oracle/</loc>
+    <loc>https://johnathanlin.github.io/posts/python_connect_mongodb_and_oracle/</loc>
     <lastmod>2020-02-09T17:06:29+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/vue_springboot_deploy_in_linux/</loc>
+    <loc>https://johnathanlin.github.io/posts/vue_springboot_deploy_in_linux/</loc>
     <lastmod>2020-01-27T16:53:23+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/some_usages_of_python/</loc>
+    <loc>https://johnathanlin.github.io/posts/some_usages_of_python/</loc>
     <lastmod>2019-12-01T10:45:46+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/regular_expression/</loc>
+    <loc>https://johnathanlin.github.io/posts/regular_expression/</loc>
     <lastmod>2019-11-24T19:43:31+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/posts/two_crawl_web_approach/</loc>
+    <loc>https://johnathanlin.github.io/posts/two_crawl_web_approach/</loc>
     <lastmod>2019-11-15T23:05:46+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/archives/</loc>
+    <loc>https://johnathanlin.github.io/archives/</loc>
   </url>
 </urlset>

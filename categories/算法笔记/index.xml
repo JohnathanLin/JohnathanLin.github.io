@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>算法笔记 on 风萧古道 - 勤学苦练，年复一年</title>
-    <link>https://windypath.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
+    <link>https://johnathanlin.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
     <description>Recent content in 算法笔记 on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sat, 16 Oct 2021 17:43:32 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Oct 2021 17:43:32 +0800</lastBuildDate><atom:link href="https://johnathanlin.github.io/categories/%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kotlin手动实现一个最简单的哈希表</title>
-      <link>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</link>
+      <link>https://johnathanlin.github.io/posts/kotlin_implement_a_simple_hashmap/</link>
       <pubDate>Sat, 16 Oct 2021 17:43:32 +0800</pubDate>
       
-      <guid>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</guid>
+      <guid>https://johnathanlin.github.io/posts/kotlin_implement_a_simple_hashmap/</guid>
       <description>参考的是《数据结构(C语言版)》上256页左右的哈希表的介绍，用了最简单的直接寻址法 + 链地址法。
 用的是Kotlin。
 package main.kotlin  /** * 手动实现简单的hash表 * 简单的数组 +链表 （无红黑树） * 要求哈希函数可配置（被自我否决，太复杂了啦），这次就先做比较简单的 直接定址法 + 链地址法 * * @Date 2021-10-16. * @author Johnathan Lin */  data class Node(  val key: Int, //key  var value: Int, //value  var next: Node? //如果hash值重复了，则用头插法放进去 )  fun main() {  // hash表，这次可为空  val size = 100  val hashArr: Array&amp;lt;Node?&amp;gt; = Array(size) { null }   //插入 假设插入key 8 value 24  println(&amp;#34;插入key 8 value 24&amp;#34;)  set(hashArr, size, 8, 24) { k, s -&amp;gt; k % s }  println(&amp;#34;插入key 108 value 32&amp;#34;)  set(hashArr, size, 108, 32) { k, s -&amp;gt; k % s }  var v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  println(&amp;#34;删除key 108&amp;#34;)  remove(hashArr, size, 108) { k, s -&amp;gt; k % s }  v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  v = get(hashArr, size, 8) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为8: $v&amp;#34;)  }  /** * @param hashFunc 哈希函数 param1：key param2：size */ fun get(hashArr: Array&amp;lt;Node?</description>
@@ -20,10 +20,10 @@ package main.kotlin  /** * 手动实现简单的hash表 * 简单的数组 +链�
     
     <item>
       <title>Kotlin实现二叉堆、大顶堆、优先级队列</title>
-      <link>https://windypath.com/posts/kotlin_implement_heap/</link>
+      <link>https://johnathanlin.github.io/posts/kotlin_implement_heap/</link>
       <pubDate>Thu, 14 Oct 2021 23:30:30 +0800</pubDate>
       
-      <guid>https://windypath.com/posts/kotlin_implement_heap/</guid>
+      <guid>https://johnathanlin.github.io/posts/kotlin_implement_heap/</guid>
       <description>参考了
 https://www.bilibili.com/video/BV11t4y1r79L
 https://blog.csdn.net/qq_19782019/article/details/78301832
