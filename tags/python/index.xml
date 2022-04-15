@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on 风萧古道 - 勤学苦练，年复一年</title>
-    <link>https://johnathanlin.github.io/tags/python/</link>
+    <link>https://windypath.com/tags/python/</link>
     <description>Recent content in Python on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sat, 13 Nov 2021 15:31:00 +0800</lastBuildDate><atom:link href="https://johnathanlin.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Nov 2021 15:31:00 +0800</lastBuildDate><atom:link href="https://windypath.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Python实现简单UDP Ping</title>
-      <link>https://johnathanlin.github.io/posts/simple_udp_ping_with_python/</link>
+      <link>https://windypath.com/posts/simple_udp_ping_with_python/</link>
       <pubDate>Sat, 13 Nov 2021 15:31:00 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/simple_udp_ping_with_python/</guid>
+      <guid>https://windypath.com/posts/simple_udp_ping_with_python/</guid>
       <description>套接字编程作业2：UDP ping 程序 在本实验中，您将学习使用Python进行UDP套接字编程的基础知识。您将学习如何使用UDP套接字发送和接收数据报，以及如何设置适当的套接字超时。在实验中，您将熟悉Ping应用程序及其在计算统计信息（如丢包率）中的作用。
 您首先需要研究一个用Python编写的简单的ping服务器程序，并实现对应的客户端程序。这些程序提供的功能类似于现代操作系统中可用的标准ping程序功能。然而，我们的程序使用更简单的UDP协议，而不是标准互联网控制消息协议（ICMP）来进行通信。 ping协议允许客户端机器发送一个数据包到远程机器，并使远程机器将数据包返回到客户（称为回显）的操作。另外，ping协议允许主机计算它到其他机器的往返时间。
 以下是Ping服务器程序的完整代码。你的任务是写出Ping客户端程序。
@@ -22,10 +22,10 @@
     
     <item>
       <title>使用Python开发一个简单的web服务器</title>
-      <link>https://johnathanlin.github.io/posts/simple_web_server_with_python/</link>
+      <link>https://windypath.com/posts/simple_web_server_with_python/</link>
       <pubDate>Sun, 07 Nov 2021 21:02:00 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/simple_web_server_with_python/</guid>
+      <guid>https://windypath.com/posts/simple_web_server_with_python/</guid>
       <description>来自书籍《计算机网络-自顶向下方法-第6版(课本)》第120页，第二章应用层的课后题第一题。
  基础题目 题目：在这个编程作业中，你将用Python语言开发一个简单的Web服务器，它仅能处理一个请求。具体而言，你的Web服务器将：（1）当一个客户（浏览器）联系时创建一个连接套接字；（2）从这个连接接收HTTP请求；（3）解释该请求以确定所请求的特定文件；（4）从服务器的文件系统获得请求的文件；（5）创建一个由请求的文件组成的HTTP响应报文，报文前面有首部行；（6）经TCP连接向请求的浏览器发送响应。如果浏览器请求一个在该服务器中不存在的文件，服务器应当返回一个“404 Not Found”差错报文。
 参考或者说学习了github上moranzcw的仓库：Computer-Networking-A-Top-Down-Approach-NOTES的内容，完成了这道题。
@@ -35,10 +35,10 @@
     
     <item>
       <title>Kotlin实现二叉堆、大顶堆、优先级队列</title>
-      <link>https://johnathanlin.github.io/posts/kotlin_implement_heap/</link>
+      <link>https://windypath.com/posts/kotlin_implement_heap/</link>
       <pubDate>Thu, 14 Oct 2021 23:30:30 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/kotlin_implement_heap/</guid>
+      <guid>https://windypath.com/posts/kotlin_implement_heap/</guid>
       <description>参考了
 https://www.bilibili.com/video/BV11t4y1r79L
 https://blog.csdn.net/qq_19782019/article/details/78301832

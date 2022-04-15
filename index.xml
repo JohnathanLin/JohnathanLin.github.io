@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>风萧古道 - 勤学苦练，年复一年</title>
-    <link>https://johnathanlin.github.io/</link>
+    <link>https://windypath.com/</link>
     <description>Recent content on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://johnathanlin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Apr 2022 18:37:07 +0800</lastBuildDate><atom:link href="https://windypath.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>独立个人项目开发心得 - 任务切分、挑战性、实用性和半途而废</title>
-      <link>https://johnathanlin.github.io/posts/individual_project_experience/</link>
+      <link>https://windypath.com/posts/individual_project_experience/</link>
       <pubDate>Tue, 05 Apr 2022 18:37:07 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/individual_project_experience/</guid>
+      <guid>https://windypath.com/posts/individual_project_experience/</guid>
       <description>在写文章前容许我啰嗦一下：对于软件开发，我走了不少弯路，有时觉得自己作为API侠，无所不能，有时又觉得自己很多LeetCode题写不出来，无能为力。我有一个博客，但是写满了自己的絮絮叨叨，真正有本领的东西九牛一毛。
 我甚至没有自己的“代表作”，因为我是一个急性子，想马上得到结果（事实上计算机真能马上给出结果，但开发过程不行）。我经常在“造自己的轮子”和“用别人的轮子”之间徘徊，“造自己的轮子”比较有成就感，但是难度其实很大，需要踩很多别人踩过的坑；“用别人的轮子”则没有什么成就感，做出来也不像是自己做的。而平时工作中，每天都在用别人的轮子，自己真正从比较底层开始实现的情况是非常少的，导致我在闲暇时间也不想用别人的轮子。
 啰嗦一下自己的经历： 2004年，我家买了电脑，我也接触了很多电脑上的游戏。但是也许是我心浮气躁或者没有游戏天赋，我总是在游戏里输，总是追不上邻居小伙伴；
@@ -45,10 +45,10 @@
     
     <item>
       <title>使用Python实现简单UDP Ping</title>
-      <link>https://johnathanlin.github.io/posts/simple_udp_ping_with_python/</link>
+      <link>https://windypath.com/posts/simple_udp_ping_with_python/</link>
       <pubDate>Sat, 13 Nov 2021 15:31:00 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/simple_udp_ping_with_python/</guid>
+      <guid>https://windypath.com/posts/simple_udp_ping_with_python/</guid>
       <description>套接字编程作业2：UDP ping 程序 在本实验中，您将学习使用Python进行UDP套接字编程的基础知识。您将学习如何使用UDP套接字发送和接收数据报，以及如何设置适当的套接字超时。在实验中，您将熟悉Ping应用程序及其在计算统计信息（如丢包率）中的作用。
 您首先需要研究一个用Python编写的简单的ping服务器程序，并实现对应的客户端程序。这些程序提供的功能类似于现代操作系统中可用的标准ping程序功能。然而，我们的程序使用更简单的UDP协议，而不是标准互联网控制消息协议（ICMP）来进行通信。 ping协议允许客户端机器发送一个数据包到远程机器，并使远程机器将数据包返回到客户（称为回显）的操作。另外，ping协议允许主机计算它到其他机器的往返时间。
 以下是Ping服务器程序的完整代码。你的任务是写出Ping客户端程序。
@@ -58,10 +58,10 @@
     
     <item>
       <title>使用Python开发一个简单的web服务器</title>
-      <link>https://johnathanlin.github.io/posts/simple_web_server_with_python/</link>
+      <link>https://windypath.com/posts/simple_web_server_with_python/</link>
       <pubDate>Sun, 07 Nov 2021 21:02:00 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/simple_web_server_with_python/</guid>
+      <guid>https://windypath.com/posts/simple_web_server_with_python/</guid>
       <description>来自书籍《计算机网络-自顶向下方法-第6版(课本)》第120页，第二章应用层的课后题第一题。
  基础题目 题目：在这个编程作业中，你将用Python语言开发一个简单的Web服务器，它仅能处理一个请求。具体而言，你的Web服务器将：（1）当一个客户（浏览器）联系时创建一个连接套接字；（2）从这个连接接收HTTP请求；（3）解释该请求以确定所请求的特定文件；（4）从服务器的文件系统获得请求的文件；（5）创建一个由请求的文件组成的HTTP响应报文，报文前面有首部行；（6）经TCP连接向请求的浏览器发送响应。如果浏览器请求一个在该服务器中不存在的文件，服务器应当返回一个“404 Not Found”差错报文。
 参考或者说学习了github上moranzcw的仓库：Computer-Networking-A-Top-Down-Approach-NOTES的内容，完成了这道题。
@@ -71,10 +71,10 @@
     
     <item>
       <title>Kotlin手动实现一个最简单的哈希表</title>
-      <link>https://johnathanlin.github.io/posts/kotlin_implement_a_simple_hashmap/</link>
+      <link>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</link>
       <pubDate>Sat, 16 Oct 2021 17:43:32 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/kotlin_implement_a_simple_hashmap/</guid>
+      <guid>https://windypath.com/posts/kotlin_implement_a_simple_hashmap/</guid>
       <description>参考的是《数据结构(C语言版)》上256页左右的哈希表的介绍，用了最简单的直接寻址法 + 链地址法。
 用的是Kotlin。
 package main.kotlin  /** * 手动实现简单的hash表 * 简单的数组 +链表 （无红黑树） * 要求哈希函数可配置（被自我否决，太复杂了啦），这次就先做比较简单的 直接定址法 + 链地址法 * * @Date 2021-10-16. * @author Johnathan Lin */  data class Node(  val key: Int, //key  var value: Int, //value  var next: Node? //如果hash值重复了，则用头插法放进去 )  fun main() {  // hash表，这次可为空  val size = 100  val hashArr: Array&amp;lt;Node?&amp;gt; = Array(size) { null }   //插入 假设插入key 8 value 24  println(&amp;#34;插入key 8 value 24&amp;#34;)  set(hashArr, size, 8, 24) { k, s -&amp;gt; k % s }  println(&amp;#34;插入key 108 value 32&amp;#34;)  set(hashArr, size, 108, 32) { k, s -&amp;gt; k % s }  var v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  println(&amp;#34;删除key 108&amp;#34;)  remove(hashArr, size, 108) { k, s -&amp;gt; k % s }  v = get(hashArr, size, 108) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为108: $v&amp;#34;)  v = get(hashArr, size, 8) { k, s -&amp;gt; k % s }  println(&amp;#34;读取key为8: $v&amp;#34;)  }  /** * @param hashFunc 哈希函数 param1：key param2：size */ fun get(hashArr: Array&amp;lt;Node?</description>
@@ -82,10 +82,10 @@ package main.kotlin  /** * 手动实现简单的hash表 * 简单的数组 +链�
     
     <item>
       <title>Kotlin实现二叉堆、大顶堆、优先级队列</title>
-      <link>https://johnathanlin.github.io/posts/kotlin_implement_heap/</link>
+      <link>https://windypath.com/posts/kotlin_implement_heap/</link>
       <pubDate>Thu, 14 Oct 2021 23:30:30 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/kotlin_implement_heap/</guid>
+      <guid>https://windypath.com/posts/kotlin_implement_heap/</guid>
       <description>参考了
 https://www.bilibili.com/video/BV11t4y1r79L
 https://blog.csdn.net/qq_19782019/article/details/78301832
@@ -95,10 +95,10 @@ package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 
     
     <item>
       <title>Unison在Linux下的安装与使用</title>
-      <link>https://johnathanlin.github.io/posts/unison_install_in_linux/</link>
+      <link>https://windypath.com/posts/unison_install_in_linux/</link>
       <pubDate>Sat, 22 Feb 2020 14:19:06 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/unison_install_in_linux/</guid>
+      <guid>https://windypath.com/posts/unison_install_in_linux/</guid>
       <description>这是一篇在公司写的文档，但不涉及公司隐私。几乎所有内容参考于：https://www.cnblogs.com/welcomer/p/5068287.html
  引言 编写目的 编写本文档是为了让读者快速上手使用Unison进行两台Linux服务器文件进行同步。
 前景 Unison是windows和unix平台下都可以使用的双向文件同步工具，它能使两个文件夹（本地或网络上的）保持内容的一致。 unison 拥有其它一些同步工具或文件系统的相同特性，但也有自己的特点：
@@ -120,10 +120,10 @@ cp /root/unison /usr/bin/ 3、在两台服务器上都输入unison –version
     
     <item>
       <title>Java实现类似WINSCP访问远程Linux服务器，执行命令、上传文件、下载文件</title>
-      <link>https://johnathanlin.github.io/posts/java_implement_winscp_like/</link>
+      <link>https://windypath.com/posts/java_implement_winscp_like/</link>
       <pubDate>Thu, 20 Feb 2020 10:32:24 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/java_implement_winscp_like/</guid>
+      <guid>https://windypath.com/posts/java_implement_winscp_like/</guid>
       <description>pom.xml添加的依赖：
 &amp;lt;!-- https://mvnrepository.com/artifact/ch.ethz.ganymed/ganymed-ssh2 --&amp;gt; &amp;lt;dependency&amp;gt;  &amp;lt;groupId&amp;gt;ch.ethz.ganymed&amp;lt;/groupId&amp;gt;  &amp;lt;artifactId&amp;gt;ganymed-ssh2&amp;lt;/artifactId&amp;gt;  &amp;lt;version&amp;gt;262&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 这里注意，不同版本的这玩意用法有差别。这里我使用的是262。
 操作类代码如下：
@@ -132,10 +132,10 @@ import ch.ethz.ssh2.*;  import java.io.*;  /** * @Author: 风萧古道的博客 
     
     <item>
       <title>一个被废弃的项目——自动爬取信息然后发给我自己邮箱上</title>
-      <link>https://johnathanlin.github.io/posts/a_bad_project_crawler_and_email/</link>
+      <link>https://windypath.com/posts/a_bad_project_crawler_and_email/</link>
       <pubDate>Sun, 09 Feb 2020 17:21:03 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/a_bad_project_crawler_and_email/</guid>
+      <guid>https://windypath.com/posts/a_bad_project_crawler_and_email/</guid>
       <description>这是一个python项目。
 使用到的技术包括爬虫和发邮件
 代码如下：
@@ -144,10 +144,10 @@ import ch.ethz.ssh2.*;  import java.io.*;  /** * @Author: 风萧古道的博客 
     
     <item>
       <title>Python连接MongoDB和Oracle实战</title>
-      <link>https://johnathanlin.github.io/posts/python_connect_mongodb_and_oracle/</link>
+      <link>https://windypath.com/posts/python_connect_mongodb_and_oracle/</link>
       <pubDate>Sun, 09 Feb 2020 17:06:29 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/python_connect_mongodb_and_oracle/</guid>
+      <guid>https://windypath.com/posts/python_connect_mongodb_and_oracle/</guid>
       <description>Python连接MongoDB 安装 首先要安装pymongo，用pip装一下就好了。
 工具类python文件 以下直接给出我写的mongodb操作类
 #!/usr/bin/env python # -*- coding: utf-8 -*- # @Time : 2019/12/23 14:02 # @Author : Johnathan Lin 林佳庆 &amp;#34;&amp;#34;&amp;#34; 数据导入Mongo模块 &amp;#34;&amp;#34;&amp;#34;  import os  import pymongo  from utils.configReader import read_mongo_config  # 设置编码 os.environ[&amp;#39;NLS_LANG&amp;#39;] = &amp;#39;SIMPLIFIED CHINESE_CHINA.UTF8&amp;#39;   def get_mongodb_collection(collection):  &amp;#34;&amp;#34;&amp;#34; 根据配置文件和数据库和表得到表（collection） :param database: 数据库 :param collection: 表 :return: 表的对象 &amp;#34;&amp;#34;&amp;#34;  mongo_config = read_mongo_config()  client = pymongo.MongoClient(mongo_config[&amp;#39;client&amp;#39;])  db = client[mongo_config[&amp;#39;database&amp;#39;]]  if mongo_config[&amp;#39;auth&amp;#39;] == &amp;#39;True&amp;#39; or mongo_config[&amp;#39;auth&amp;#39;] == &amp;#39;true&amp;#39;:  db.</description>
@@ -155,10 +155,10 @@ import ch.ethz.ssh2.*;  import java.io.*;  /** * @Author: 风萧古道的博客 
     
     <item>
       <title>vue和springboot项目部署到Linux服务器</title>
-      <link>https://johnathanlin.github.io/posts/vue_springboot_deploy_in_linux/</link>
+      <link>https://windypath.com/posts/vue_springboot_deploy_in_linux/</link>
       <pubDate>Mon, 27 Jan 2020 16:53:23 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/vue_springboot_deploy_in_linux/</guid>
+      <guid>https://windypath.com/posts/vue_springboot_deploy_in_linux/</guid>
       <description>写在前面的话 前后端分离的项目中，需要分别部署前端与后端项目。前端项目使用npm打包，将得到的dist文件夹下的内容上传到服务器后，用nginx的alias指向文件夹即可访问，而后端项目使用maven打包，需使用tomcat在后台启动，再通过nginx转发，供前端项目调用。
 打包 前端的打包 前端项目使用的是vue-element-admin的基础版本：vue-admin-template
 根据教程从github上下载后，在webstorm中运行成功。
@@ -172,10 +172,10 @@ package com.windypath.demo.controller;  import com.windypath.demo.response.Respo
     
     <item>
       <title>Python的一些用法（可能不定时更新）</title>
-      <link>https://johnathanlin.github.io/posts/some_usages_of_python/</link>
+      <link>https://windypath.com/posts/some_usages_of_python/</link>
       <pubDate>Sun, 01 Dec 2019 10:45:46 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/some_usages_of_python/</guid>
+      <guid>https://windypath.com/posts/some_usages_of_python/</guid>
       <description>strip()、lstrip()、和rstrip() Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。
 注意：该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。
 lstrip()就是从左边匹配然后删除字符，rstrip()从右边匹配然后删除字符。
@@ -194,10 +194,10 @@ re.sub(pattern, repl, string, count=0, flags=0) 参数：
     
     <item>
       <title>java正则表达式 - 双反斜杠（\）和Pattern的matches()与find()</title>
-      <link>https://johnathanlin.github.io/posts/regular_expression/</link>
+      <link>https://windypath.com/posts/regular_expression/</link>
       <pubDate>Sun, 24 Nov 2019 19:43:31 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/regular_expression/</guid>
+      <guid>https://windypath.com/posts/regular_expression/</guid>
       <description>参考文献 java正则表达式（find()和 matches()） java正则表达式，求匹配：双反斜杠（\）合法，单反斜杠不合法（\） Java 正则表达式-菜鸟教程 正则表达式-菜鸟教程
  Pattern类和Matcher类 在Java中，与正则表达式相关的类有两个：Pattern和Matcher
 菜鸟教程已经介绍的很好了。
@@ -208,10 +208,10 @@ import java.util.regex.*;  class RegexExample1{  public static void main(String 
     
     <item>
       <title>简述爬虫对两种网站的不同爬取方式</title>
-      <link>https://johnathanlin.github.io/posts/two_crawl_web_approach/</link>
+      <link>https://windypath.com/posts/two_crawl_web_approach/</link>
       <pubDate>Fri, 15 Nov 2019 23:05:46 +0800</pubDate>
       
-      <guid>https://johnathanlin.github.io/posts/two_crawl_web_approach/</guid>
+      <guid>https://windypath.com/posts/two_crawl_web_approach/</guid>
       <description>爬虫的目的是采集网站的数据。而网站渲染数据有两种方式。我个人将其称为前端渲染和后端渲染。
 前端渲染 前端渲染指的是网页并不直接展示数据，而是在读取完网页之后，再次向服务器请求数据。在得到数据之后再渲染到网页中。
 后端渲染 后端渲染值的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
