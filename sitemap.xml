@@ -2,20 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://windypath.com/posts/mybatis_text_not_queried/</loc>
-    <lastmod>2022-04-15T11:18:21+08:00</lastmod>
-  </url><url>
     <loc>https://windypath.com/categories/</loc>
-    <lastmod>2022-04-15T11:18:21+08:00</lastmod>
+    <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/</loc>
-    <lastmod>2022-04-15T11:18:21+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2022-04-15T11:18:21+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/</loc>
-    <lastmod>2022-04-15T11:18:21+08:00</lastmod>
+    <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/tags/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
@@ -23,10 +14,16 @@
     <loc>https://windypath.com/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
+    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2022-04-05T18:37:07+08:00</lastmod>
+  </url><url>
     <loc>https://windypath.com/tags/%E7%8B%AC%E7%AB%8B%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/individual_project_experience/</loc>
+    <lastmod>2022-04-05T18:37:07+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/</loc>
     <lastmod>2022-04-05T18:37:07+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/tags/python/</loc>
@@ -94,6 +91,9 @@
   </url><url>
     <loc>https://windypath.com/posts/javascript_basic_knowledge/</loc>
     <lastmod>2018-06-06T21:32:09+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/mybatis_text_not_queried/</loc>
+    <lastmod>2018-05-24T14:21:21+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/compilation_principle_first_follow_select/</loc>
     <lastmod>2018-04-30T16:23:34+08:00</lastmod>
