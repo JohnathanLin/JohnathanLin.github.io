@@ -15,7 +15,7 @@
       <guid>https://windypath.com/posts/linux_socket_programming/</guid>
       <description>本文主要介绍Linux C++ 基础Socket网络编程。 大部分知识来自于网站：https://www.geeksforgeeks.org/socket-programming-cc/
  Socket编程状态图 从图中可以看到，服务端这边需要处理四步才能进入等待连接的状态，而客户端只要两步。
-Socket变成中各函数简单解析 本解析仅为自己理解所用，可能有些纰漏，有则改之。 原文中的知识总结得比我更好，尽量参考原文，我的理解仅做辅助之用。
+Socket编程中各函数简单解析 本解析仅为自己理解所用，可能有些纰漏，有则改之。 原文中的知识总结得比我更好，尽量参考原文，我的理解仅做辅助之用。
 服务端 先说服务端。服务端需要指定好端口并监听，所以需要bind()绑定好端口，需要listen()进入监听状态，然后通过accept()阻塞等待客户端的消息。
 引用表：
  #include &amp;lt;sys/socket&amp;gt;  socket() setsockopt() bind() listen() accept()   #include &amp;lt;netinet/in.h&amp;gt;  struct sockaddr_in   #include &amp;lt;unistd.h&amp;gt;  read()   #include &amp;lt;arpa/inet.h&amp;gt;  inet_pton()    socket() 这个函数是用来创建一个socket，3个参数中，需要特别传的就是前两个。返回一个socket编号，是个int值。
