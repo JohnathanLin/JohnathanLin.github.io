@@ -3,7 +3,7 @@ title: 风萧古道 - 勤学苦练，年复一年
 paginate: 5
 theme: PaperMod
 
-Copyright: "Windypath 风萧古道 [闽ICP备15016446号-3](https://beian.miit.gov.cn/)"
+Copyright: "Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -72,8 +72,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Windypath 风萧古道"
-    Content: For Chinese Software
+    Title: "勤学苦练，年复一年。"
+    Content: "**Study And Practice, Years Of It.**"
 
   socialIcons:
     - name: github
