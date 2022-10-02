@@ -17,7 +17,7 @@
 您首先需要研究一个用Python编写的简单的ping服务器程序，并实现对应的客户端程序。这些程序提供的功能类似于现代操作系统中可用的标准ping程序功能。然而，我们的程序使用更简单的UDP协议，而不是标准互联网控制消息协议（ICMP）来进行通信。 ping协议允许客户端机器发送一个数据包到远程机器，并使远程机器将数据包返回到客户（称为回显）的操作。另外，ping协议允许主机计算它到其他机器的往返时间。
 以下是Ping服务器程序的完整代码。你的任务是写出Ping客户端程序。
 服务器代码 以下代码完整实现了一个ping服务器。您需要在运行客户端程序之前编译并运行此代码。而且您不需要修改此代码。 在这个服务器代码中，30％的客户端的数据包会被模拟丢失。你应该仔细研究这个代码，它将帮助你编写ping客户端。
-# UDPPingerServer.py  # We will need the following module to generate randomized lost packets import random  from socket import * import random  # Create a UDP socket  # Notice the use of SOCK_DGRAM for UDP packets  serverSocket = socket(AF_INET, SOCK_DGRAM) # Assign IP address and port number to socket  serverSocket.bind((&amp;#39;&amp;#39;, 12000))  while True: 	# Generate random number in the range of 0 to 10  	rand = random.</description>
+# UDPPingerServer.py # We will need the following module to generate randomized lost packets import random from socket import * import random # Create a UDP socket # Notice the use of SOCK_DGRAM for UDP packets serverSocket = socket(AF_INET, SOCK_DGRAM) # Assign IP address and port number to socket serverSocket.bind((&amp;#39;&amp;#39;, 12000)) while True: # Generate random number in the range of 0 to 10 rand = random.</description>
     </item>
     
     <item>
@@ -27,10 +27,10 @@
       
       <guid>https://windypath.com/posts/simple_web_server_with_python/</guid>
       <description>来自书籍《计算机网络-自顶向下方法-第6版(课本)》第120页，第二章应用层的课后题第一题。
- 基础题目 题目：在这个编程作业中，你将用Python语言开发一个简单的Web服务器，它仅能处理一个请求。具体而言，你的Web服务器将：（1）当一个客户（浏览器）联系时创建一个连接套接字；（2）从这个连接接收HTTP请求；（3）解释该请求以确定所请求的特定文件；（4）从服务器的文件系统获得请求的文件；（5）创建一个由请求的文件组成的HTTP响应报文，报文前面有首部行；（6）经TCP连接向请求的浏览器发送响应。如果浏览器请求一个在该服务器中不存在的文件，服务器应当返回一个“404 Not Found”差错报文。
+基础题目 题目：在这个编程作业中，你将用Python语言开发一个简单的Web服务器，它仅能处理一个请求。具体而言，你的Web服务器将：（1）当一个客户（浏览器）联系时创建一个连接套接字；（2）从这个连接接收HTTP请求；（3）解释该请求以确定所请求的特定文件；（4）从服务器的文件系统获得请求的文件；（5）创建一个由请求的文件组成的HTTP响应报文，报文前面有首部行；（6）经TCP连接向请求的浏览器发送响应。如果浏览器请求一个在该服务器中不存在的文件，服务器应当返回一个“404 Not Found”差错报文。
 参考或者说学习了github上moranzcw的仓库：Computer-Networking-A-Top-Down-Approach-NOTES的内容，完成了这道题。
 代码https://github.com/moranzcw如下：
-# import socket module from socket import *  serverSocket = socket(AF_INET, SOCK_STREAM) # Prepare a sever socket # Fill in start # 定义ip和端口号，然后bind绑定socket host = &amp;#39;&amp;#39; port = 6789 serverSocket.bind((host, port)) serverSocket.listen(1) # Fill in end while True:  # Establish the connection  print(&amp;#39;Ready to serve...&amp;#39;)  connectionSocket, addr = serverSocket.accept()  # Fill in start #Fill in end  try:  message = connectionSocket.</description>
+# import socket module from socket import * serverSocket = socket(AF_INET, SOCK_STREAM) # Prepare a sever socket # Fill in start # 定义ip和端口号，然后bind绑定socket host = &amp;#39;&amp;#39; port = 6789 serverSocket.bind((host, port)) serverSocket.listen(1) # Fill in end while True: # Establish the connection print(&amp;#39;Ready to serve...&amp;#39;) connectionSocket, addr = serverSocket.accept() # Fill in start #Fill in end try: message = connectionSocket.recv(1024) # Fill in start #Fill in end filename = message.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
 https://www.bilibili.com/video/BV11t4y1r79L
 https://blog.csdn.net/qq_19782019/article/details/78301832
 他们已经写的足够好了。我最近都在用Kotlin编程开发，我尝试用Kotlin实现了大顶堆，并且作为手动实现的优先级队列，通过了Leetcode 347。
-package main.kotlin  /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap&amp;lt;T : Comparable&amp;lt;T&amp;gt;&amp;gt;(  val arr: Array&amp;lt;T&amp;gt;,  var size: Int ) {  //将无序的数组构建一个二叉堆  fun makeHeap() {  for (i in (size - 1) downTo 0) {  heapDown(i)  }  }   //向二叉堆中加入元素  fun addItem(value: T) {  //TODO 添加的边界还未考虑  val newIndex = size++  arr[newIndex] = value  heapUp(newIndex)  }   //移除堆顶元素  fun removeItem(): T {  //TODO 删除的边界还未考虑  val removeValue = arr[0]  val lastValue = arr[size - 1] // println(&amp;#34;lastValue:$lastValue&amp;#34;)  arr[0] = lastValue  size--  heapDown(0)   return removeValue  }   fun printHeap() {  for (i in 0.</description>
+package main.kotlin /** * 二叉堆（大顶堆、优先级队列） * * @Date 2021-10-14. * @author Johnathan Lin */ data class MaxHeap&amp;lt;T : Comparable&amp;lt;T&amp;gt;&amp;gt;( val arr: Array&amp;lt;T&amp;gt;, var size: Int ) { //将无序的数组构建一个二叉堆 fun makeHeap() { for (i in (size - 1) downTo 0) { heapDown(i) } } //向二叉堆中加入元素 fun addItem(value: T) { //TODO 添加的边界还未考虑 val newIndex = size++ arr[newIndex] = value heapUp(newIndex) } //移除堆顶元素 fun removeItem(): T { //TODO 删除的边界还未考虑 val removeValue = arr[0] val lastValue = arr[size - 1] // println(&amp;#34;lastValue:$lastValue&amp;#34;) arr[0] = lastValue size-- heapDown(0) return removeValue } fun printHeap() { for (i in 0.</description>
     </item>
     
   </channel>
