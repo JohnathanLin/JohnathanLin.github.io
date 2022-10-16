@@ -38,6 +38,18 @@
                 href="https://windypath.com/en/categories/"
                 />
   </url><url>
+    <loc>https://windypath.com/en/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/search/"
+                />
+  </url><url>
     <loc>https://windypath.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"

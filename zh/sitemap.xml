@@ -173,8 +173,6 @@
     <loc>https://windypath.com/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2015-08-29T13:32:03+08:00</lastmod>
   </url><url>
-    <loc>https://windypath.com/search/</loc>
-  </url><url>
     <loc>https://windypath.com/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -197,6 +195,18 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://windypath.com/archives/"
+                />
+  </url><url>
+    <loc>https://windypath.com/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/search/"
                 />
   </url>
 </urlset>
