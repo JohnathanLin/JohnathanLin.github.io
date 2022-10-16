@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WindyPath - For Chinese Software</title>
+    <link>https://windypath.com/en/</link>
+    <description>Recent content on WindyPath - For Chinese Software</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright><atom:link href="https://windypath.com/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://windypath.com/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://windypath.com/en/about/</guid>
+      <description>Welcome Hello, welcome to WindyPath. I&amp;rsquo;m the owner of this website. My English name is Johnathan.
+My Chinese nickname is &amp;ldquo;凌虚&amp;rdquo;, the name comes from a Chinese animation film, The Legend of Qin. &amp;ldquo;凌虚&amp;rdquo; is the name of a sword, which is belong to Zhang Liang(张良), a famous strategist in the Warring Period.
+The name of this website is WindyPath, its Chinese name is &amp;ldquo;风萧古道&amp;rdquo;.
+The first two characters &amp;ldquo;风萧&amp;rdquo; come from poetry &amp;ldquo;风萧萧兮易水寒&amp;rdquo;, The last two characters are derived from poetry &amp;ldquo;古道西风瘦马&amp;rdquo;.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
