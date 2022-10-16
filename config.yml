@@ -28,18 +28,18 @@ params:
   defaultTheme: dark # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
-  tocopen: false
+  showtoc: true
+  tocopen: true
 
   assets:
     # disableHLJS: true # to disable highlight.js
@@ -109,39 +109,83 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: archives
-      name: Archives
-      url: /archives/
-      weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 10
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 20
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+
 outputs:
     home:
         - HTML
         - RSS
         - JSON # is necessary
+languages:
+  zh:
+    languageName: 点击这里切换中文网站
+    weight: 1
+    title: 风萧古道 - 勤学苦练，年复一年
+    description: 为了中国软件而奋斗
+    homeInfoParams:
+      Title: "\U0001F44B 欢迎光临，我是凌虚"
+      Content: "**本站只分享软件技术内容，希望您可以在这里拓展视野，一起进步。**"
+
+    label:
+      text: "风萧古道"
+      # icon: /apple-touch-icon.png
+      iconHeight: 35
+    menu:
+      main:
+        - identifier: archives
+          name: 归档
+          url: /archives/
+          weight: 10
+        - identifier: categories
+          name: 分类
+          title: 分类
+          url: /categories/
+          weight: 11
+        - identifier: tags
+          name: 标签
+          url: /tags/
+          weight: 12
+        - identifier: 关于
+          name: 关于
+          url: /about/
+          weight: 13
+        - identifier: search
+          name: 搜索
+          url: /search/
+          weight: 20
+    
+
+  en:
+    languageName: Switch to English Page
+    weight: 2
+    title: WindyPath - For Chinese Software
+    description: For Chinese Software
+    homeInfoParams:
+      Title: "\U0001F44B Hi, I'm Johnathan, Nice to meet you."
+      Content: "**Only software technique articles are in this website. I hope you can get improved here.**"
+
+    
+    menu:
+      main:
+        - identifier: archives
+          name: Archives
+          url: /archives/
+          weight: 10
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 11
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 12
+        - identifier: about
+          name: About
+          url: /about/
+          weight: 13
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 20
+
+
+defaultContentLanguage: zh

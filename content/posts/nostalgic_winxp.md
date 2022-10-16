@@ -5,7 +5,7 @@ draft: false
 categories: ["技术文章", "怀旧"]
 tags: ["WinXp"]
 ---
-# 在直接下载我最后完成的虚拟机镜像
+# 在这里直接下载我最后完成的虚拟机镜像
 虚拟机镜像下载：
 
 链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l 

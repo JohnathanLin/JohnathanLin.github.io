@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "关于"
 url: "/about/"
 
 ---
@@ -37,5 +37,5 @@ For Chinese Software
 其他的日常生活的吐槽和牢骚就放到Twitter里。
 
 # 联系方式
-Email: Mjg5MzQ4NTg4QHFxLmNvbQ==
-Telegram: d2luZHlwYXRo
+Email: windypathblog@gmail.com
+Telegram: @windypath
