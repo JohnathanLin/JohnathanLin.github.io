@@ -9,6 +9,7 @@ tags: ["WinXp"]
 虚拟机镜像下载：
 
 链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l 
+
 提取码：374l 
 
 我本地的VirtualBox 版本：6.1
@@ -61,7 +62,7 @@ Windows XP英文版默认没有中文语言包。
 2. 将mui_win_xp_pro_n_cd1.iso通过共享文件夹从物理机传进虚拟机中
 3. 安装，[具体方法](https://www.docin.com/p-2998336055.html)
 
-最后重启电脑即可。
+最后重启虚拟机即可。
 
 上图!
 ![](/images/nostalgic_xp.png)
