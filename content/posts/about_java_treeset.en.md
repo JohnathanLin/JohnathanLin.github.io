@@ -1,5 +1,5 @@
 ---
-title: "Some Usage and features os Java TreeSet"
+title: "Some Usage and features on Java TreeSet"
 date: 2022-06-18T17:10:44+08:00
 draft: false
 categories: ["Tech"]
