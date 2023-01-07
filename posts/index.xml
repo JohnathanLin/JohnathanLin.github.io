@@ -14,7 +14,8 @@
       
       <guid>https://windypath.com/posts/nostalgic_winxp/</guid>
       <description>在这里直接下载我最后完成的虚拟机镜像 虚拟机镜像下载：
-链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l 提取码：374l
+链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l
+提取码：374l
 我本地的VirtualBox 版本：6.1
 我可以先聊聊怀旧吗 也许对于老外来说，Win95是他们的青春，所以他们做了React95这样的UI库，或者大家一起努力写了个操作系统serenity。但是对于咱们国内的用户而言，当家用PC走进千家万户时，映入眼帘的是——Windows XP。
 一位中国台湾同胞sh1zuku编写开发了一个网页版的Windows XP模拟器:项目链接，在线演示，还有另一位来自越南的老哥khang-nd写了Windows 7的网页模拟器在线演示。
@@ -31,7 +32,7 @@ vbox-img geometry --filename Windows_XP_Professional-disk1.vdi --format VDI --cy
 我把它下载之后放进百度网盘里了：
 链接：https://pan.baidu.com/s/18mW9OCRejMDoEpUcih-zlA?pwd=peu4 提取码：peu4
 然后,
-设置VirtualBox里Windows XP虚拟机和物理机共享文件夹，具体方法 将mui_win_xp_pro_n_cd1.iso通过共享文件夹从物理机传进虚拟机中 安装，具体方法 最后重启电脑即可。
+设置VirtualBox里Windows XP虚拟机和物理机共享文件夹，具体方法 将mui_win_xp_pro_n_cd1.iso通过共享文件夹从物理机传进虚拟机中 安装，具体方法 最后重启虚拟机即可。
 上图! </description>
     </item>
     
@@ -326,7 +327,7 @@ import java.util.regex.*; class RegexExample1{ public static void main(String ar
       <guid>https://windypath.com/posts/two_crawl_web_approach/</guid>
       <description>爬虫的目的是采集网站的数据。而网站渲染数据有两种方式。我个人将其称为前端渲染和后端渲染。
 前端渲染 前端渲染指的是网页并不直接展示数据，而是在读取完网页之后，再次向服务器请求数据。在得到数据之后再渲染到网页中。
-后端渲染 后端渲染值的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
+后端渲染 后端渲染指的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
 爬取方式 目前我并没有使用scrapy、webmagic等爬虫框架，仅使用python的requests模块，json模块和BeautifulSoup框架。
 前端渲染的爬取方式
 步骤：使用requests请求数据，再用json.loads()方法将返回的数据解析，最后操作得到的数据对象即可。

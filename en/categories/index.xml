@@ -5,6 +5,25 @@
     <link>https://windypath.com/en/categories/</link>
     <description>Recent content in Categories on WindyPath - For Chinese Software</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright><atom:link href="https://windypath.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Sun, 02 Oct 2022 18:51:17 +0800</lastBuildDate><atom:link href="https://windypath.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nostalgic</title>
+      <link>https://windypath.com/en/categories/nostalgic/</link>
+      <pubDate>Sun, 02 Oct 2022 18:51:17 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/categories/nostalgic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://windypath.com/en/categories/tech/</link>
+      <pubDate>Sun, 02 Oct 2022 18:51:17 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/categories/tech/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

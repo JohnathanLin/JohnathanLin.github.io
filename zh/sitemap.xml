@@ -17,6 +17,16 @@
   </url><url>
     <loc>https://windypath.com/posts/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/"
+                />
   </url><url>
     <loc>https://windypath.com/tags/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
@@ -33,9 +43,29 @@
   </url><url>
     <loc>https://windypath.com/posts/nostalgic_winxp/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/nostalgic_winxp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/nostalgic_winxp/"
+                />
   </url><url>
     <loc>https://windypath.com/tags/winxp/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/tags/winxp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/tags/winxp/"
+                />
   </url><url>
     <loc>https://windypath.com/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
@@ -58,6 +88,16 @@
   </url><url>
     <loc>https://windypath.com/posts/about_java_treeset/</loc>
     <lastmod>2022-06-18T17:10:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/about_java_treeset/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/about_java_treeset/"
+                />
   </url><url>
     <loc>https://windypath.com/tags/csapp/</loc>
     <lastmod>2022-05-05T17:53:43+08:00</lastmod>

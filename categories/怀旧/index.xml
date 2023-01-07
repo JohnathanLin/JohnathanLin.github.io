@@ -14,7 +14,8 @@
       
       <guid>https://windypath.com/posts/nostalgic_winxp/</guid>
       <description>在这里直接下载我最后完成的虚拟机镜像 虚拟机镜像下载：
-链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l 提取码：374l
+链接：https://pan.baidu.com/s/1yfY0SjDrtOeuTiEWf7YizA?pwd=374l
+提取码：374l
 我本地的VirtualBox 版本：6.1
 我可以先聊聊怀旧吗 也许对于老外来说，Win95是他们的青春，所以他们做了React95这样的UI库，或者大家一起努力写了个操作系统serenity。但是对于咱们国内的用户而言，当家用PC走进千家万户时，映入眼帘的是——Windows XP。
 一位中国台湾同胞sh1zuku编写开发了一个网页版的Windows XP模拟器:项目链接，在线演示，还有另一位来自越南的老哥khang-nd写了Windows 7的网页模拟器在线演示。
@@ -31,7 +32,7 @@ vbox-img geometry --filename Windows_XP_Professional-disk1.vdi --format VDI --cy
 我把它下载之后放进百度网盘里了：
 链接：https://pan.baidu.com/s/18mW9OCRejMDoEpUcih-zlA?pwd=peu4 提取码：peu4
 然后,
-设置VirtualBox里Windows XP虚拟机和物理机共享文件夹，具体方法 将mui_win_xp_pro_n_cd1.iso通过共享文件夹从物理机传进虚拟机中 安装，具体方法 最后重启电脑即可。
+设置VirtualBox里Windows XP虚拟机和物理机共享文件夹，具体方法 将mui_win_xp_pro_n_cd1.iso通过共享文件夹从物理机传进虚拟机中 安装，具体方法 最后重启虚拟机即可。
 上图! </description>
     </item>
     

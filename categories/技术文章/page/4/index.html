@@ -19,7 +19,7 @@ java.util.regex 包主要包括以下三个类：
 Pattern 类：pattern 对象是一个正则表达式的编译表示。Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。该方法接受一个正则表达式作为它的第一个参数。 Matcher 类：Matcher 对象是对输入字符串进行解释和匹配操作的引擎。与Pattern 类一样，Matcher 也没有公共构造方法。你需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。 PatternSyntaxException：PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。 然后菜鸟教程的第一个代码样例如下：
 import java.util.regex.*; class RegexExample1{ public static void main(String args[]){ String content = "I am noob " + "from runoob.com."; String pattern = ".*runoob.*"; boolean isMatch = Pattern.matches(pattern, content); System.out.println("字符串中是否包含了 'runoob' 子字符串? " + isMatch); } } 但我尝试把他改成自己的正则表达式，如”^I am“来匹配开头的”I am"字符串时，我发现程序一直返回false。...</p></div><footer class=entry-footer><span title='2019-11-24 19:43:31 +0800 +0800'>十一月 24, 2019</span>&nbsp;·&nbsp;JohnathanLin</footer><a class=entry-link aria-label="post link to java正则表达式 - 双反斜杠（\）和Pattern的matches()与find()" href=https://windypath.com/posts/regular_expression/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>简述爬虫对两种网站的不同爬取方式</h2></header><div class=entry-content><p>爬虫的目的是采集网站的数据。而网站渲染数据有两种方式。我个人将其称为前端渲染和后端渲染。
 前端渲染 前端渲染指的是网页并不直接展示数据，而是在读取完网页之后，再次向服务器请求数据。在得到数据之后再渲染到网页中。
-后端渲染 后端渲染值的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
+后端渲染 后端渲染指的是服务器收到请求之后，将数据在后端写入网页，然后将带有数据的网页直接展示在浏览器中。
 爬取方式 目前我并没有使用scrapy、webmagic等爬虫框架，仅使用python的requests模块，json模块和BeautifulSoup框架。
 前端渲染的爬取方式
 步骤：使用requests请求数据，再用json.loads()方法将返回的数据解析，最后操作得到的数据对象即可。
