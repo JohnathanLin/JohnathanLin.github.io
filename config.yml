@@ -123,7 +123,7 @@ languages:
     description: 为了中国软件而奋斗
     homeInfoParams:
       Title: "\U0001F44B 欢迎光临，我是凌虚"
-      Content: "**本站只分享软件技术内容，希望您可以在这里拓展视野，一起进步。**"
+      Content: "本站只分享软件技术内容，希望您可以在这里拓展视野，一起进步。"
 
     label:
       text: "风萧古道"
@@ -161,7 +161,7 @@ languages:
     description: For Chinese Software
     homeInfoParams:
       Title: "\U0001F44B Hi, I'm Johnathan, Nice to meet you."
-      Content: "**Only software technique articles are in this website. I hope you can get improved here.**"
+      Content: "Only software technique articles are in this website. I hope you can get improved here."
 
     
     menu:
