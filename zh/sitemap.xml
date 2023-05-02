@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://windypath.com/categories/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,17 @@
                 href="https://windypath.com/categories/"
                 />
   </url><url>
+    <loc>https://windypath.com/tags/csapp/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/categories/csapp/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/csapp_chapter2_representing_manipulating_info/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+  </url><url>
     <loc>https://windypath.com/posts/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +38,7 @@
                 />
   </url><url>
     <loc>https://windypath.com/tags/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -40,6 +49,22 @@
                 hreflang="zh"
                 href="https://windypath.com/tags/"
                 />
+  </url><url>
+    <loc>https://windypath.com/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/"
+                />
+  </url><url>
+    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/nostalgic_winxp/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
@@ -67,23 +92,7 @@
                 href="https://windypath.com/tags/winxp/"
                 />
   </url><url>
-    <loc>https://windypath.com/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://windypath.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://windypath.com/"
-                />
-  </url><url>
     <loc>https://windypath.com/categories/%E6%80%80%E6%97%A7/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/about_java_treeset/</loc>
@@ -98,15 +107,6 @@
                 hreflang="zh"
                 href="https://windypath.com/posts/about_java_treeset/"
                 />
-  </url><url>
-    <loc>https://windypath.com/tags/csapp/</loc>
-    <lastmod>2022-05-05T17:53:43+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/categories/csapp/</loc>
-    <lastmod>2022-05-05T17:53:43+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/posts/csapp_chapter2_representing_manipulating_info/</loc>
-    <lastmod>2022-05-05T17:53:43+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/tags/linux/</loc>
     <lastmod>2022-04-30T23:23:49+08:00</lastmod>
@@ -212,6 +212,18 @@
   </url><url>
     <loc>https://windypath.com/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2015-08-29T13:32:03+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/mybooks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/mybooks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/mybooks/"
+                />
   </url><url>
     <loc>https://windypath.com/about/</loc>
     <xhtml:link
