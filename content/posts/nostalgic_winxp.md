@@ -1,5 +1,5 @@
 ---
-title: "Windows XP虚拟机中文版无需激活下载了"
+title: "Windows XP虚拟机中文版无需激活下载"
 date: 2022-10-02T18:51:17+08:00
 draft: false
 categories: ["技术文章", "怀旧"]

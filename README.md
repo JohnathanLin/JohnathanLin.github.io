@@ -1,7 +1,7 @@
 # 风萧古道
 
 ## 安装启动
-git clone 之后，不能直接使用``hugo server -DC``启动，而应该要先安装子模块，也就是主题theme。
+git clone 之后，不能直接使用``hugo server -D``启动，而应该要先安装子模块，也就是主题theme。
 本项目使用了hugo-PaperMod的主题，因此需要在项目根目录下使用以下命令：
 
 ```
@@ -40,3 +40,18 @@ tags: ["标签"] //标签
 ### 保存并查看
 
 保存后在网站上即可看到文章
+
+
+## 主题更新了吗？
+使用命令
+``` cmd
+git submodule update --remote --recursive
+```
+更新最新的主题代码到本地。
+
+## 本地手机调试？
+使用命令
+``` cmd
+hugo server --bind="192.168.xx.xx" -D
+```
+然后手机和电脑连同一个wifi，直接访问192.168.xx.xx:1313即可。

@@ -304,9 +304,9 @@ var f = new Foo('zhangsan',20)
 ## 作用域和闭包
 ### 执行上下文
 
-范围：一段<script>或者一个函数
+范围：一段\<script>或者一个函数
 
-全局：变量定义、函数声明（一段<script>）
+全局：变量定义、函数声明（一段\<script>）
 
 函数：变量定义、函数声明、this、arguments（函数）
 ```javascript

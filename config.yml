@@ -148,10 +148,15 @@ languages:
           name: 关于
           url: /about/
           weight: 13
+        - identifier: mybooks
+          name: 藏书
+          url: /mybooks/
+          weight: 19
         - identifier: search
           name: 搜索
           url: /search/
           weight: 20
+    
     
 
   en:
@@ -182,6 +187,10 @@ languages:
           name: About
           url: /about/
           weight: 13
+        - identifier: mybooks
+          name: My Books
+          url: /mybooks/
+          weight: 19
         - identifier: search
           name: Search
           url: /search/
@@ -189,3 +198,8 @@ languages:
 
 
 defaultContentLanguage: zh
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
