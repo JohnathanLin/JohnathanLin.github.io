@@ -135,6 +135,18 @@
                 href="https://windypath.com/en/mybooks/"
                 />
   </url><url>
+    <loc>https://windypath.com/en/myfriends/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/myfriends/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/myfriends/"
+                />
+  </url><url>
     <loc>https://windypath.com/en/search/</loc>
     <xhtml:link
                 rel="alternate"

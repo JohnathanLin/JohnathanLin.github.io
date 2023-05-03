@@ -249,6 +249,18 @@
                 href="https://windypath.com/archives/"
                 />
   </url><url>
+    <loc>https://windypath.com/myfriends/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/myfriends/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/myfriends/"
+                />
+  </url><url>
     <loc>https://windypath.com/search/</loc>
     <xhtml:link
                 rel="alternate"
