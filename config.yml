@@ -151,6 +151,10 @@ languages:
         - identifier: mybooks
           name: 藏书
           url: /mybooks/
+          weight: 18
+        - identifier: myfriends
+          name: 朋友
+          url: /myfriends/
           weight: 19
         - identifier: search
           name: 搜索
@@ -190,6 +194,10 @@ languages:
         - identifier: mybooks
           name: My Books
           url: /mybooks/
+          weight: 18
+        - identifier: myfriends
+          name: My Friends
+          url: /myfriends/
           weight: 19
         - identifier: search
           name: Search
