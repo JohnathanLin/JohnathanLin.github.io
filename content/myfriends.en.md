@@ -4,4 +4,4 @@ hideenFromSearch: true
 showtoc: false
 ---
 
-{{< friendList githubLoginList="0x2E">}}
+{{< friendList githubLoginList="0x2E,ch549235962">}}
