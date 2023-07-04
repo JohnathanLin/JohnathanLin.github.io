@@ -71,9 +71,10 @@ string的find_first_not_of()接收的参数与find_first_of()一致，但它是�
 用于切分字符串，接收两个参数pos和len，从pos位置开始，切出往后len个长度的字符。不会修改原字符串。
 
 具体的C++文档位置：
-find_first_of()：https://cplusplus.com/reference/string/string/find_first_of/
-find_first_not_of()：https://cplusplus.com/reference/string/string/find_first_not_of/
-substr()：https://cplusplus.com/reference/string/string/substr/
+
+find_first_of()：[https://cplusplus.com/reference/string/string/find_first_of/](https://cplusplus.com/reference/string/string/find_first_of/)
+find_first_not_of()：[https://cplusplus.com/reference/string/string/find_first_not_of/](https://cplusplus.com/reference/string/string/find_first_not_of/)
+substr()：[https://cplusplus.com/reference/string/string/substr/](https://cplusplus.com/reference/string/string/substr/)
 
 # 方法2：C++11 正则表达式
 ``` c++
@@ -109,7 +110,7 @@ https://en.cppreference.com/w/cpp/regex/regex_token_iterator
 vector的构造函数中，可以通过传入两个迭代器，获取迭代器之间的元素。
 
 # 方法3：使用stringstream分割字符串（仅支持空格、回车、tab换行）
-信息来源：https://www.cnblogs.com/narjaja/p/10044157.html
+信息来源：[https://www.cnblogs.com/narjaja/p/10044157.html](https://www.cnblogs.com/narjaja/p/10044157.html)
 ``` C++
 #include <iostream>
 #include <sstream>
