@@ -126,10 +126,10 @@ languages:
         Title: "\U0001F44B 欢迎光临，我是凌虚"
         Content: "本站只分享软件技术内容，希望您可以在这里拓展视野，一起进步。"
 
-    label:
-      text: "风萧古道"
-      # icon: /apple-touch-icon.png
-      iconHeight: 35
+      label:
+        text: "风萧古道"
+        # icon: /apple-touch-icon.png
+        iconHeight: 35
     menu:
       main:
         - identifier: archives
