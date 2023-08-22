@@ -5,8 +5,20 @@
     <link>https://windypath.com/en/posts/</link>
     <description>Recent content in Posts on WindyPath - For Chinese Software</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sun, 02 Oct 2022 18:51:17 +0800</lastBuildDate><atom:link href="https://windypath.com/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jul 2023 11:54:44 +0800</lastBuildDate><atom:link href="https://windypath.com/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Split A String In C&#43;&#43;?</title>
+      <link>https://windypath.com/en/posts/how_to_split_a_string_in_cpp/</link>
+      <pubDate>Sun, 02 Jul 2023 11:54:44 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/how_to_split_a_string_in_cpp/</guid>
+      <description>Preface During a coding interview, I encountered a question that involved two lines of input. Each line contained an unknown number of numbers separated by spaces. The input format was as follows:
+12 34 567 888 99 100 358 74 58454 742 4469 88 They did not provide the number of digits in each line in advance. Instead, they required the user to split them themselves.
+During the coding exam, I didn&amp;rsquo;t implement this functionality using C++, but instead used the split() method available in Java to handle it.</description>
+    </item>
+    
     <item>
       <title>Windows XP Virtual Machine Chinese Version Without Activation Image Download</title>
       <link>https://windypath.com/en/posts/nostalgic_winxp/</link>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://windypath.com/en/categories/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -15,11 +15,21 @@
                 href="https://windypath.com/en/categories/"
                 />
   </url><url>
-    <loc>https://windypath.com/en/categories/nostalgic/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <loc>https://windypath.com/en/posts/how_to_split_a_string_in_cpp/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/how_to_split_a_string_in_cpp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/how_to_split_a_string_in_cpp/"
+                />
   </url><url>
     <loc>https://windypath.com/en/posts/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -30,6 +40,25 @@
                 hreflang="en"
                 href="https://windypath.com/en/posts/"
                 />
+  </url><url>
+    <loc>https://windypath.com/en/categories/tech/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/en/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/"
+                />
+  </url><url>
+    <loc>https://windypath.com/en/categories/nostalgic/</loc>
+    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/en/tags/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
@@ -44,9 +73,6 @@
                 href="https://windypath.com/en/tags/"
                 />
   </url><url>
-    <loc>https://windypath.com/en/categories/tech/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
-  </url><url>
     <loc>https://windypath.com/en/posts/nostalgic_winxp/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
     <xhtml:link
@@ -58,19 +84,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://windypath.com/en/posts/nostalgic_winxp/"
-                />
-  </url><url>
-    <loc>https://windypath.com/en/</loc>
-    <lastmod>2022-10-02T18:51:17+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://windypath.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://windypath.com/en/"
                 />
   </url><url>
     <loc>https://windypath.com/en/tags/winxp/</loc>

@@ -5,8 +5,25 @@
     <link>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</link>
     <description>Recent content in 技术文章 on 风萧古道 - 勤学苦练，年复一年</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
     <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sun, 30 Apr 2023 21:08:43 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jul 2023 11:54:44 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何用C&#43;&#43;分割一个字符串？</title>
+      <link>https://windypath.com/posts/how_to_split_a_string_in_cpp/</link>
+      <pubDate>Sun, 02 Jul 2023 11:54:44 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/how_to_split_a_string_in_cpp/</guid>
+      <description>前言 在上机面试的时候，遇到了一道题，它的输入是两行字符串，每行字符串有未知数量的数字（两行数字数量一致），用空格分隔开，输入形如：
+12 34 567 888 99 100 358 74 58454 742 4469 88 并不提前提供每行的数字数量。而是让用户自己切分。
+当时在上机考试时，我没有使用C++实现这一功能，而是使用Java里的split()进行处理。
+后来，考试结束后，我上网查询C++切分字符串的写法，发现C++并没有原生提供类似split(某个字符)的写法。
+那么有什么方法能替代呢？
+方法1：使用string的find等函数()配合substr()进行切分 根据知乎大佬的回答，他提供的第一种解决方案是：
+C++ 的 string 为什么不提供 split 函数？ - 知乎用户的回答 - 知乎 https://www.zhihu.com/question/36642771/answer/865135551
+#include &amp;lt;iostream&amp;gt; #include &amp;lt;cstring&amp;gt; #include &amp;lt;vector&amp;gt; void split(const std::string&amp;amp; s, std::vector&amp;lt;std::string&amp;gt;&amp;amp; tokens, const std::string&amp;amp; delimiters = &amp;#34; &amp;#34;) { std::string::size_type lastPos = s.find_first_not_of(delimiters, 0); std::string::size_type pos = s.find_first_of(delimiters, lastPos); while (std::string::npos != pos || std::string::npos != lastPos) { tokens.push_back(s.substr(lastPos, pos - lastPos)); lastPos = s.</description>
+    </item>
+    
     <item>
       <title>CSAPP第二章-信息的表示与处理</title>
       <link>https://windypath.com/posts/csapp_chapter2_representing_manipulating_info/</link>

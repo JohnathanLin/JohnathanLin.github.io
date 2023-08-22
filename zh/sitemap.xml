@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://windypath.com/categories/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,17 +15,8 @@
                 href="https://windypath.com/categories/"
                 />
   </url><url>
-    <loc>https://windypath.com/tags/csapp/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/categories/csapp/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/posts/csapp_chapter2_representing_manipulating_info/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
-  </url><url>
     <loc>https://windypath.com/posts/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -36,6 +27,44 @@
                 hreflang="zh"
                 href="https://windypath.com/posts/"
                 />
+  </url><url>
+    <loc>https://windypath.com/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/"
+                />
+  </url><url>
+    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/how_to_split_a_string_in_cpp/</loc>
+    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/how_to_split_a_string_in_cpp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/how_to_split_a_string_in_cpp/"
+                />
+  </url><url>
+    <loc>https://windypath.com/tags/csapp/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/categories/csapp/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/csapp_chapter2_representing_manipulating_info/</loc>
+    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/tags/</loc>
     <lastmod>2023-04-30T21:08:43+08:00</lastmod>
@@ -49,22 +78,6 @@
                 hreflang="zh"
                 href="https://windypath.com/tags/"
                 />
-  </url><url>
-    <loc>https://windypath.com/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://windypath.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://windypath.com/"
-                />
-  </url><url>
-    <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2023-04-30T21:08:43+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/nostalgic_winxp/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
@@ -248,6 +261,8 @@
                 hreflang="zh"
                 href="https://windypath.com/archives/"
                 />
+  </url><url>
+    <loc>https://windypath.com/resume/</loc>
   </url><url>
     <loc>https://windypath.com/myfriends/</loc>
     <xhtml:link

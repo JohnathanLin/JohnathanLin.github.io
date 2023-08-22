@@ -27,7 +27,7 @@ Python 的 re 模块提供了re.sub用于替换字符串中的匹配项。
 语法：
 re.sub(pattern, repl, string, count=0, flags=0) 参数：
 pattern : 正则中的模式字符串。 repl : 替换的字符串，也可为一个函数。 string : 要被查找替换的原始字符串。 count : 模式匹配后替换的最大次数，默认 0 表示替换所有的匹配。 使用该方法：
-import re if __name__ == '__main__': string = '<a href=&#34;http://www."><meta property="og:type" content="article"><meta property="og:url" content="https://windypath.com/posts/some_usages_of_python/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-12-01T10:45:46+08:00"><meta property="article:modified_time" content="2019-12-01T10:45:46+08:00"><meta property="og:site_name" content="风萧古道 - 勤学苦练，年复一年"><meta name=twitter:card content="summary"><meta name=twitter:title content="Python的一些用法（可能不定时更新）"><meta name=twitter:description content="strip()、lstrip()、和rstrip() Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。
+import re if __name__ == '__main__': string = '<a href=&#34;http://www."><meta property="og:type" content="article"><meta property="og:url" content="https://windypath.com/posts/some_usages_of_python/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-12-01T10:45:46+08:00"><meta property="article:modified_time" content="2019-12-01T10:45:46+08:00"><meta property="og:site_name" content="Windypath"><meta name=twitter:card content="summary"><meta name=twitter:title content="Python的一些用法（可能不定时更新）"><meta name=twitter:description content="strip()、lstrip()、和rstrip() Python strip() 方法用于移除字符串头尾指定的字符（默认为空格或换行符）或字符序列。
 注意：该方法只能删除开头或是结尾的字符，不能删除中间部分的字符。
 lstrip()就是从左边匹配然后删除字符，rstrip()从右边匹配然后删除字符。
 表面上挺好理解的，但是用起来还是有一些陷阱。
