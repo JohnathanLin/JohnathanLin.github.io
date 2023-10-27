@@ -17,6 +17,8 @@ minify:
   minifyOutput: true
 
 params:
+
+
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Windypath
   description: "For Chinese Software"
@@ -55,20 +57,6 @@ params:
     # icon: /apple-touch-icon.png
     iconHeight: 35
 
-  # profile-mode
-  profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
 
   # home-info mode
   homeInfoParams:
@@ -119,17 +107,29 @@ languages:
   zh:
     languageName: 点击这里切换中文网站
     weight: 1
-    title: 风萧古道 - 勤学苦练，年复一年
-    description: 为了中国软件而奋斗
+    description: 勤学苦练，年复一年
     params: 
       homeInfoParams:
-        Title: "\U0001F44B 欢迎光临，我是凌虚"
+        Title: "\U0001F44B  欢迎光临，我是凌虚"
         Content: "本站只分享软件技术内容，希望您可以在这里拓展视野，一起进步。"
 
       label:
         text: "风萧古道"
         # icon: /apple-touch-icon.png
         iconHeight: 35
+
+      profileMode:
+        enabled: true
+        title: 凌虚
+        subtitle: "服务器开发工程师<br/>勤学苦练，年复一年"
+        imageUrl: "/images/Recovery.jpg" # optional
+        imageTitle: "windy path" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: 归档
+            url: "/archives"
+
     menu:
       main:
         - identifier: archives
@@ -167,13 +167,23 @@ languages:
   en:
     languageName: Switch to English Page
     weight: 2
-    title: WindyPath - For Chinese Software
-    description: For Chinese Software
+    title: WindyPath - Study And Practice, Years Of It
+    description: Study And Practice, Years Of It
     params: 
       homeInfoParams:
         Title: "\U0001F44B Hi, I'm Johnathan, Nice to meet you."
         Content: "Only software technique articles are in this website. I hope you can get improved here."
-
+      profileMode:
+        enabled: true
+        title: Johnathan Lin
+        subtitle: "Server Software Development<br/>Study And Practice, Years Of It"
+        imageUrl: "/images/Recovery.jpg" # optional
+        imageTitle: "windy path" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: Archive
+            url: "/archives"
     
     menu:
       main:
