@@ -57,6 +57,19 @@
                 href="https://windypath.com/en/"
                 />
   </url><url>
+    <loc>https://windypath.com/en/posts/about_myself/</loc>
+    <lastmod>2023-04-29T00:00:00+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/about_myself/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/about_myself/"
+                />
+  </url><url>
     <loc>https://windypath.com/en/categories/nostalgic/</loc>
     <lastmod>2022-10-02T18:51:17+08:00</lastmod>
   </url><url>

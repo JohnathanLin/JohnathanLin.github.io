@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on WindyPath - For Chinese Software</title>
+    <title>Posts on WindyPath - Study And Practice, Years Of It</title>
     <link>https://windypath.com/en/posts/</link>
-    <description>Recent content in Posts on WindyPath - For Chinese Software</description>
+    <description>Recent content in Posts on WindyPath - Study And Practice, Years Of It</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
@@ -17,6 +17,17 @@
       <description>Preface During a coding interview, I encountered a question that involved two lines of input. Each line contained an unknown number of numbers separated by spaces. The input format was as follows:
 12 34 567 888 99 100 358 74 58454 742 4469 88 They did not provide the number of digits in each line in advance. Instead, they required the user to split them themselves.
 During the coding exam, I didn&amp;rsquo;t implement this functionality using C++, but instead used the split() method available in Java to handle it.</description>
+    </item>
+    
+    <item>
+      <title>My Self-introduction</title>
+      <link>https://windypath.com/en/posts/about_myself/</link>
+      <pubDate>Sat, 29 Apr 2023 00:00:00 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/about_myself/</guid>
+      <description>Welcome Hello and welcome to WindyPath. I am the owner of this website. My English name is Johnathan.
+My Chinese nickname is &amp;ldquo;凌虚&amp;rdquo; which comes from a Chinese animated film called The Legend of Qin. &amp;ldquo;凌虚&amp;rdquo; is the name of a sword that belong to Zhang Liang(张良), a famous strategist in the Warring Period. The name of this website is WindyPath, and its Chinese name is &amp;ldquo;风萧古道&amp;rdquo;.
+The first two characters, &amp;ldquo;风萧&amp;rdquo; come from poetry &amp;ldquo;风萧萧兮易水寒&amp;rdquo; while the last two characters, &amp;ldquo;古道&amp;rdquo; are derived from poetry &amp;ldquo;古道西风瘦马&amp;rdquo;.</description>
     </item>
     
     <item>
