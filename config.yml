@@ -119,7 +119,7 @@ languages:
         iconHeight: 35
 
       profileMode:
-        enabled: true
+        enabled: false
         title: 凌虚
         subtitle: "服务器开发工程师<br/>勤学苦练，年复一年"
         imageUrl: "/images/Recovery.jpg" # optional

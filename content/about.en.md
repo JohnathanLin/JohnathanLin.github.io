@@ -10,3 +10,7 @@ As a child, I always lost in computer games. Suddenly, I became interested in we
 Never did I imagine that I would end up working as a game server developer. Two and a half years have passed in the project team of "Game of Thrones: Winter is Coming" Asia-Pacific version. I independently maintained the server for as long as half a year, becoming the "Guardian of the North Kingdom."
 
 Here, I document the process of my step-by-step growth.
+
+# Contact
+Email: windypathblog@gmail.com
+Telegram: @windypath
