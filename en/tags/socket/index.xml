@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Socket on WindyPath - Study And Practice, Years Of It</title>
+    <link>https://windypath.com/en/tags/socket/</link>
+    <description>Recent content in Socket on WindyPath - Study And Practice, Years Of It</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Sat, 30 Apr 2022 23:23:49 +0800</lastBuildDate><atom:link href="https://windypath.com/en/tags/socket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux C&#43;&#43; Socket in Action</title>
+      <link>https://windypath.com/en/posts/linux_socket_programming/</link>
+      <pubDate>Sat, 30 Apr 2022 23:23:49 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/linux_socket_programming/</guid>
+      <description>This article primarily introduces the basics of Linux C++ Socket network programming. Most of the knowledge is sourced from the website: https://www.geeksforgeeks.org/socket-programming-cc/
+Socket Programming State Diagram From the diagram, we can see that the server side needs to go through four steps to enter the &amp;ldquo;waiting for connection&amp;rdquo; state, while the client side only requires two.
+Brief Analysis of Socket Programming Functions This analysis is for personal understanding and may have some omissions.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -136,12 +136,42 @@
   </url><url>
     <loc>https://windypath.com/tags/linux/</loc>
     <lastmod>2022-04-30T23:23:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/tags/linux/"
+                />
   </url><url>
     <loc>https://windypath.com/posts/linux_socket_programming/</loc>
     <lastmod>2022-04-30T23:23:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/linux_socket_programming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/linux_socket_programming/"
+                />
   </url><url>
     <loc>https://windypath.com/tags/socket/</loc>
     <lastmod>2022-04-30T23:23:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/tags/socket/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/tags/socket/"
+                />
   </url><url>
     <loc>https://windypath.com/posts/compare_web_with_game_server/</loc>
     <lastmod>2022-04-16T18:15:44+08:00</lastmod>

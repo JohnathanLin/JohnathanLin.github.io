@@ -53,5 +53,16 @@ sh1zuku is from China, Taiwan, he created a Windows XP simulator on website: Pro
       <description>An Example (kotlin) import java.util.TreeSet /** * Define a data class to test TreeSet Collection * Sort by TreeSet * id: player id * score: player score */ data class PlayerScore(var id: Int, var score: Int): Comparable&amp;lt;PlayerScore&amp;gt; { override fun compareTo(other: PlayerScore): Int { return if (score &amp;gt; other.score) { 1 } else if (score &amp;lt; other.score) { -1 } else { 0 } } } fun main() { //create a TreeSet val treeSet: TreeSet&amp;lt;PlayerScore&amp;gt; = TreeSet() //create 3 PlayerScore object，and use &amp;#39;id101Obj&amp;#39; reference to the first obj //put these objects into the treeset val id101Obj = PlayerScore(101,100) //put in different order treeSet.</description>
     </item>
     
+    <item>
+      <title>Linux C&#43;&#43; Socket in Action</title>
+      <link>https://windypath.com/en/posts/linux_socket_programming/</link>
+      <pubDate>Sat, 30 Apr 2022 23:23:49 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/linux_socket_programming/</guid>
+      <description>This article primarily introduces the basics of Linux C++ Socket network programming. Most of the knowledge is sourced from the website: https://www.geeksforgeeks.org/socket-programming-cc/
+Socket Programming State Diagram From the diagram, we can see that the server side needs to go through four steps to enter the &amp;ldquo;waiting for connection&amp;rdquo; state, while the client side only requires two.
+Brief Analysis of Socket Programming Functions This analysis is for personal understanding and may have some omissions.</description>
+    </item>
+    
   </channel>
 </rss>

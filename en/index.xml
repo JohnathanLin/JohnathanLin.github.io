@@ -54,6 +54,17 @@ sh1zuku is from China, Taiwan, he created a Windows XP simulator on website: Pro
     </item>
     
     <item>
+      <title>Linux C&#43;&#43; Socket in Action</title>
+      <link>https://windypath.com/en/posts/linux_socket_programming/</link>
+      <pubDate>Sat, 30 Apr 2022 23:23:49 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/linux_socket_programming/</guid>
+      <description>This article primarily introduces the basics of Linux C++ Socket network programming. Most of the knowledge is sourced from the website: https://www.geeksforgeeks.org/socket-programming-cc/
+Socket Programming State Diagram From the diagram, we can see that the server side needs to go through four steps to enter the &amp;ldquo;waiting for connection&amp;rdquo; state, while the client side only requires two.
+Brief Analysis of Socket Programming Functions This analysis is for personal understanding and may have some omissions.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://windypath.com/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
