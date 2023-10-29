@@ -65,6 +65,15 @@ Brief Analysis of Socket Programming Functions This analysis is for personal und
     </item>
     
     <item>
+      <title>Traditional Software Server vs. Game Server Architecture Differences</title>
+      <link>https://windypath.com/en/posts/compare_web_with_game_server/</link>
+      <pubDate>Sat, 16 Apr 2022 18:15:44 +0800</pubDate>
+      
+      <guid>https://windypath.com/en/posts/compare_web_with_game_server/</guid>
+      <description>Project Intelligent Customer Service Web Crawler SLG Game Language Java Python Kotlin Model Asynchronous Event Driven There may not be a discernible model Actor Model Transmission Protocol HTTP HTTP TCP + Netty Transmission Structure JSON JSON Protobuf Database Oracle, Redis MongoDB MySQL, Redis Database Framework MyBatis Python Library (similar to JDBC) Hibernate Cache Architecture Redis for Admin Login Status Possibly only caching page numbers All game data is cached, periodically written to the database Configuration Information Only application.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://windypath.com/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
