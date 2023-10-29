@@ -10,15 +10,16 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+googleAnalytics: G-MLYM2PFRSJ
+privacy:
+  googleAnalytics:
+    disable: false
 
 minify:
   disableXML: true
   minifyOutput: true
 
 params:
-
-
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Windypath
   description: "For Chinese Software"
