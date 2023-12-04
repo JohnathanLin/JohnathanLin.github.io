@@ -142,10 +142,10 @@ languages:
           title: 分类
           url: /categories/
           weight: 11
-        - identifier: tags
-          name: 标签
-          url: /tags/
-          weight: 12
+        # - identifier: tags
+        #   name: 标签
+        #   url: /tags/
+        #   weight: 12
         - identifier: 关于
           name: 关于
           url: /about/
@@ -196,10 +196,10 @@ languages:
           name: Categories
           url: /categories/
           weight: 11
-        - identifier: tags
-          name: Tags
-          url: /tags/
-          weight: 12
+        # - identifier: tags
+        #   name: Tags
+        #   url: /tags/
+        #   weight: 12
         - identifier: about
           name: About
           url: /about/
