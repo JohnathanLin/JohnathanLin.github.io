@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Sun, 02 Jul 2023 11:54:44 +0800</lastBuildDate><atom:link href="https://windypath.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 17:27:44 +0800</lastBuildDate><atom:link href="https://windypath.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java并发编程中上锁的几种方式</title>
+      <link>https://windypath.com/posts/java_juc_briefly/</link>
+      <pubDate>Mon, 04 Dec 2023 17:27:44 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/java_juc_briefly/</guid>
+      <description>前言：本文想要介绍Synchronized，ReentrantLock和ReentrantLock的Condition的相关用法。
+Synchronized上锁 Synchronized可以修饰实例方法、静态方法和代码块。修饰代码块时，可以对具体的对象上锁，也可以对某个类(.class)上锁。
+Synchronized是非公平锁 以下代码是通过给一个多线程能访问到的变量使用synchronized进行上锁，实现有序打印数字的功能。并且在最后会统计不同线程打印数字的次数：
+package com.windypath.lockcondition; public class Syn { int count = 0; final Object sth = new Object(); void play() { int loopTimes = 1000; SynThread t1 = new SynThread(loopTimes, &amp;#34;t1&amp;#34;); SynThread t2 = new SynThread(loopTimes, &amp;#34;t2&amp;#34;); SynThread t3 = new SynThread(loopTimes, &amp;#34;t3&amp;#34;); SynThread t4 = new SynThread(loopTimes, &amp;#34;t4&amp;#34;); t1.start(); t2.start(); t3.start(); t4.start(); } public static void main(String[] args) { Syn syn = new Syn(); syn.play(); } class SynThread extends Thread { int loopTimes; public SynThread(int loopTimes, String threadName) { super(threadName); this.</description>
+    </item>
+    
     <item>
       <title>如何用C&#43;&#43;分割一个字符串？</title>
       <link>https://windypath.com/posts/how_to_split_a_string_in_cpp/</link>
@@ -506,7 +518,7 @@ package eda2; import java.io.BufferedReader; import java.io.BufferedWriter; impo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://windypath.com/mybooks/</guid>
-      <description>最近在看 深入理解计算机系统 C&amp;#43;&amp;#43;并发编程实战（第二版） 我在北京送快递 最喜欢的书籍 人间值得 当下的力量 被讨厌的勇气 深入理解计算机系统 </description>
+      <description>最近在看 想想就开心！ 尊重自己：给予与接收的心灵艺术 最重要的事，只有一件 最喜欢的书籍 深入理解计算机系统 想想就开心！ 人间值得 被讨厌的勇气 </description>
     </item>
     
     <item>
