@@ -183,17 +183,17 @@ languages:
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
-          - name: Archive
+          - name: ARCHIVES
             url: "/archives"
     
     menu:
       main:
         - identifier: archives
-          name: Archives
+          name: ARCHIVES
           url: /archives/
           weight: 10
         - identifier: categories
-          name: Categories
+          name: CATEGORIES
           url: /categories/
           weight: 11
         # - identifier: tags
@@ -201,19 +201,19 @@ languages:
         #   url: /tags/
         #   weight: 12
         - identifier: about
-          name: About
+          name: ABOUT
           url: /about/
           weight: 13
         - identifier: mybooks
-          name: My Books
+          name: MY BOOKS
           url: /mybooks/
           weight: 18
         - identifier: myfriends
-          name: My Friends
+          name: MY FRIENDS
           url: /myfriends/
           weight: 19
         - identifier: search
-          name: Search
+          name: SEARCH
           url: /search/
           weight: 20
 
