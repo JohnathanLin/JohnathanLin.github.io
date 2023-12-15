@@ -177,7 +177,7 @@ languages:
       profileMode:
         enabled: true
         title: Johnathan Lin
-        subtitle: "Server Software Development<br/>Study And Practice, Years Of It"
+        subtitle: "Server Development Engineer<br/>Study And Practice, Years Of It"
         imageUrl: "/images/Recovery.jpg" # optional
         imageTitle: "windy path" # optional
         imageWidth: 120 # custom size
