@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://windypath.com/en/categories/</loc>
-    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -13,6 +13,51 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://windypath.com/en/categories/"
+                />
+  </url><url>
+    <loc>https://windypath.com/en/categories/note/</loc>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/en/posts/</loc>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/"
+                />
+  </url><url>
+    <loc>https://windypath.com/en/categories/tech/</loc>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/en/posts/java_juc_briefly/</loc>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/posts/java_juc_briefly/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/posts/java_juc_briefly/"
+                />
+  </url><url>
+    <loc>https://windypath.com/en/</loc>
+    <lastmod>2023-12-04T17:27:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://windypath.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://windypath.com/en/"
                 />
   </url><url>
     <loc>https://windypath.com/en/posts/how_to_split_a_string_in_cpp/</loc>
@@ -26,35 +71,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://windypath.com/en/posts/how_to_split_a_string_in_cpp/"
-                />
-  </url><url>
-    <loc>https://windypath.com/en/posts/</loc>
-    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://windypath.com/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://windypath.com/en/posts/"
-                />
-  </url><url>
-    <loc>https://windypath.com/en/categories/tech/</loc>
-    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
-  </url><url>
-    <loc>https://windypath.com/en/</loc>
-    <lastmod>2023-07-02T11:54:44+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://windypath.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://windypath.com/en/"
                 />
   </url><url>
     <loc>https://windypath.com/en/posts/about_myself/</loc>
