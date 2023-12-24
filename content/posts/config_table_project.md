@@ -1,7 +1,7 @@
 ---
 title: "关于游戏服务器配置表功能的探讨"
 date: 2023-12-24T16:15:34+08:00
-draft: true
+draft: false
 categories: ["技术文章"]
 ---
 # 简介
