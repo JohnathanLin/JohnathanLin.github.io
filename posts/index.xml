@@ -7,7 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
-    <lastBuildDate>Mon, 04 Dec 2023 17:27:44 +0800</lastBuildDate><atom:link href="https://windypath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Dec 2023 16:15:34 +0800</lastBuildDate><atom:link href="https://windypath.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于游戏服务器配置表功能的探讨</title>
+      <link>https://windypath.com/posts/config_table_project/</link>
+      <pubDate>Sun, 24 Dec 2023 16:15:34 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/config_table_project/</guid>
+      <description>简介 在游戏开发中，配置表是策划与程序员之间针对功能模块开发而搭建的桥梁。配置表在游戏开发中扮演非常重要的角色。策划需要向配置表填入各种数据，以完成功能数值的配置；程序员需要在项目代码中读取配置表，根据配置表和需求决定的业务逻辑来开发功能模块。
+本文想探讨接触过的两个项目的配置表功能设计。在本文中，我不会泄露项目相关的具体信息，仅针对方案进行讨论。
+两种配置表方案简介 此处先以表格的形式，列举两种方案之间的异同：
+条目 大型SLG手游 小型MMO手游 策划配置方式 使用Excel配置 使用Excel配置 代码读取方式 将Excel文件中的内容转换成Csv文件 将Excel文件中的内容转换成Json文件 读取后存储位置 在项目启动前，先读取Csv的内容到内存中，转成二进制文件写入Zookeeper，在项目启动时加载Zookeeper中的配置表信息到内存 在项目加载时读取Json到内存中 热更新方案 修改Zookeeper中的二进制文件，通过Zookeeper发布订阅机制，分布式系统中各个系统从Zookeeper中读取新的配置表信息 先修改Json文件，然后读取Json文件到内存中 配置表检查 在读取Csv到内存后，编写检查代码，检查内存对象之间的相关逻辑依赖 无 大型SLG手游 这是一个比较大型的SLG手游项目，使用了分布式的系统，服务器数量众多，因此需要一个统一的中心服务器来管理所有的配置信息。这个项目使用的是Zookeeper进行配置表的存储。
+策划配置方式 策划使用Excel进行配置。每一列包含中文名、英文名、key类型(标记客户端、服务器或是客户端和服务器都用，且标记是否是key)、字段类型（数据data还是文字text）。
+一张表最多只能有两个key，一个主key，一个副key。
+比如，如果有一个可以领取宝箱的活动类型，活动可能有多个id，以满足不同的活动包装；每个活动都有多个宝箱。那么这张配置表的主key是活动id，副key是宝箱id。
+读取配置表 首先将Excel文件中的内容转换成Csv文件，这一步会将客户端的配置列移除，仅保留服务器用到的配置列。然后使用Java代码读取Csv文件，将Csv文件中的数据构造成Java对象，然后再将Java对象序列化成二进制文件，上传到Zookeeper中的某个节点之下。
+graph LR A[Excel文件]--&gt;|Python转换|B[Csv文件]--&gt;|Java代码读取|C[Zookeeper节点下]--&gt;|服务器启动读取Zookeeper|D[服务器内存对象] 服务器启动时会从Zookeeper的节点中加载配置表文件。
+在后续的开发过程中，发生过因为策划失误，修改了Excel后忘记生成Csv，而导致Excel文件与Csv文件不一致的情况。在这个项目中，Csv并不是读取配置表过程中最后的输出产物，仅仅是一个中间产物，所以内部也讨论过是否可以直接从Excel文件中读取到内存中的可能。
+热更新方案 当服务器启动读取完Zookeeper中的配置表后，订阅Zookeeper中配置表节点的变化事件。
+当配置表Excel文件被修改后，依次执行读取流程到上传到Zookeeper节点，此时触发节点变化事件，Zookeeper会将变化事件发布给所有订阅此节点的服务器，服务器接收到配置表节点变化后，再次加载新的配置表文件信息。
+配置表检查 当Csv读取到内存后，会对每一场表生成一个Java表管理对象，Java表管理对象与配置表一一对应。同时，这个Java表管理对象中，还可以进行多张配置表之间的逻辑校验。比如奖励表中的道具，必须在道具表中有配置，否则就会报错。
+小型MMO手游 这是一个比较小的MMO手游，服务器进程数量比较少，配置表的数量也不多。因此它不需要使用类似Zookeeper那样的配置中心，只需要各个服务器进程读取相同内容的Json文件即可。
+策划配置方式 策划使用Excel进行配置表的编辑。表头包含中文名，英文名，类型（数字，或者any任意结构）。 一张表必须要有数字id，且必须列在第一列中。其他的部分不做强制要求。
+读取配置表 Excel文件会转换为Json文件。 在代码中，服务器会加载所有的Json文件。
+程序员一般不需要针对某一张配置表单独编写解析代码。每一张表都有一个id，其他字段都默认读取为Golang的interface{}类型，每一张表都能读取成统一的格式，即：表名-id-其余各列数据。如果这张表是一张只有一个key的表，那么可以直接通过表名+id查找对应的数据。
+但如果是不止一个key的表，那么可以在默认加载之后，再新开辟内存空间，使用自定义的结构进行存储。
+热更新方案 策划修改配置表Excel文件后，转成Json文件，然后手动上传到服务器中。 通过RPC的方式，向网关服务器发送“重新读取配置表”消息，网关通知服务器集群中的所有服务器进程，重新读取Json文件到内存中，替换之前的配置表内存数据。
+配置表检查 没有配置表提前检查，仅在使用配置的时候抛出err错误。
+优缺点 类型 大型SLG手游 小型MMO手游 优点 (1)热更新方便，一次发布到Zk上之后，所有服务器都更新
+(2)有配置表检查，在加载配置表时校验配置错误信息 (1)所有表都有默认取值的方法，方便开发
+(2)Excel转Json后，Json文件方便人类阅读 缺点 (1)Excel生成的Csv可读性差，维护性差，不如XML，Json带有自己的结构信息
+(2)开发繁琐，需要为每一张表定义类，并且预测配置表的关联，有可能会因为过度关联导致自由度下降
+(3)在这个项目中，一个Excel对应一张配置表，导致Excel表数量过多，难以分类维护 (1)没有配置表校验，配错值只能等业务运行时抛出Error</description>
+    </item>
+    
     <item>
       <title>Java并发编程中上锁的几种方式</title>
       <link>https://windypath.com/posts/java_juc_briefly/</link>
