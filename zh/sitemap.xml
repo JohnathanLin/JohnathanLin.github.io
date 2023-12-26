@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://windypath.com/categories/</loc>
-    <lastmod>2023-12-24T16:15:34+08:00</lastmod>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,14 @@
                 href="https://windypath.com/categories/"
                 />
   </url><url>
+    <loc>https://windypath.com/categories/mqtt/</loc>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/mqtt_remain_length_calculate/</loc>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
+  </url><url>
     <loc>https://windypath.com/posts/</loc>
-    <lastmod>2023-12-24T16:15:34+08:00</lastmod>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +35,7 @@
                 />
   </url><url>
     <loc>https://windypath.com/</loc>
-    <lastmod>2023-12-24T16:15:34+08:00</lastmod>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,10 +47,10 @@
                 href="https://windypath.com/"
                 />
   </url><url>
-    <loc>https://windypath.com/posts/config_table_project/</loc>
-    <lastmod>2023-12-24T16:15:34+08:00</lastmod>
-  </url><url>
     <loc>https://windypath.com/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2023-12-26T16:06:34+08:00</lastmod>
+  </url><url>
+    <loc>https://windypath.com/posts/config_table_project/</loc>
     <lastmod>2023-12-24T16:15:34+08:00</lastmod>
   </url><url>
     <loc>https://windypath.com/posts/java_juc_briefly/</loc>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>MQTT on 风萧古道 - 勤学苦练，年复一年</title>
+    <link>https://windypath.com/categories/mqtt/</link>
+    <description>Recent content in MQTT on 风萧古道 - 勤学苦练，年复一年</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <copyright>Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)</copyright>
+    <lastBuildDate>Tue, 26 Dec 2023 16:06:34 +0800</lastBuildDate><atom:link href="https://windypath.com/categories/mqtt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MQTT协议中可变长度的具体计算方式（有计算过程解析）</title>
+      <link>https://windypath.com/posts/mqtt_remain_length_calculate/</link>
+      <pubDate>Tue, 26 Dec 2023 16:06:34 +0800</pubDate>
+      
+      <guid>https://windypath.com/posts/mqtt_remain_length_calculate/</guid>
+      <description>本文介绍MQTT协议中，固定报头中的可变长度部分的计算方式。通过提供一些例子，将其他介绍MQTT协议的文章中没有仔细说明的计算部分进行解释。
+参考文章 MQTT 5.0 报文（Packets）入门指南
+这篇文章简要介绍了MQTT，但是没有明确提供计算过程。
+MQTT简介之三（3） MQTT协议 报文的剩余长度如何计算和编码
+这篇文章也介绍了MQTT，且有提供计算过程，但是是用一大段文字进行表述的，理解起来有些困难。
+至于New Bing(GPT4.0)和ChatGPT 3.5，他们在做这种特殊规则下的二进制计算时，效果并不好。
+如果在读完本文后你对二进制有兴趣，可以阅读这篇文章：CSAPP第二章-信息的表示与处理
+如何计算可变长度？ 以下是各大文章的相似描述：
+MQTT协议的剩余长度字段使用了一种变长编码方案，每个字节的最高位是一个进位标志位，如果为1，表示还有后续的字节；如果为0，表示这是最后一个字节。每个字节的低七位是实际的数据位，用来表示剩余长度的一部分。因此，为了得到剩余长度的完整值，需要循环读取每个字节，并用一个乘法器来计算出总和。
+并且，提供了一张表，介绍剩余长度在不同的区间中时，需要使用多少个字节数：
+字节数 最小值 最大值 1 0(0x00) 127(0x7F) 2 128(0x80,0x01) 16383(0xFF,0x7F) 3 16384(0x80,0x80,0x01) 2097151(0xFF,0xFF,0x7F) 4 2097152(0x80,0x80,0x80,0x01) 268435455(0xFF,0xFF,0xFF,0x7F) 读取过程分析 首先，我们明确MQTT协议读取数据的过程，是一个字节一个字节依次读取的。即读取完一个字节之后，再处理下一个字节。
+那么为了可以动态控制可变长度部分的字节数，MQTT协议约定该部分的字节的第一位来标记“后续是否还有字节”。
+明确这一点之后，我们抛开第一位，读取后七位的值，可以得到一个数。
+想象一下，如果我们的可变长度res特别长，在2097152~2684354455之间，那么我们需要4个字节进行传输。此时我们将每个字节的第一位剥离，将剩余7位取出：
+用变量a表示第一个字节后7位的数，用变量b表示第二个字节后7位的数，c，d以此类推。
+那么我们会有：res = a * 1 + b * 128 + c * 128 * 128 + d * 128 * 128 * 128
+或者咱们换一种写法：res = a * 1280 + b * 1281 + c * 1282 + d * 1283</description>
+    </item>
+    
+  </channel>
+</rss>
