@@ -17,7 +17,7 @@ I work as a Game Server Engineer and I have previously developed website, includ
 
 I graduated from university in 2019, and I moved to ShangHai in December 2020. 
 
-You can read more about my computer story [HERE](../posts/individual_project_experience).
+You can read more about my computer story [HERE](../individual_project_experience).
 
 # My Idealism
 For a long time, I didn't know what to study software development for. I have earned some money in these years, but I wanted to move forward in my career of software development. I am interested in developing Chinese software.
