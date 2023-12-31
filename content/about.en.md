@@ -12,5 +12,6 @@ Never did I imagine that I would end up working as a game server developer. Two 
 Here, I document the process of my step-by-step growth.
 
 # Contact
-Email: windypathblog@gmail.com
-Telegram: @windypath
+Email: [windypathblog@gmail.com](mailto:windypathblog@gmail.com)
+
+Telegram: [@windypath](https://t.me/windypath)

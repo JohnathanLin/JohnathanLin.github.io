@@ -3,7 +3,7 @@ title: 风萧古道 - 勤学苦练，年复一年
 paginate: 5
 theme: PaperMod
 
-Copyright: "Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)"
+Copyright: "© Windypath 风萧古道 **For Chinese Software**. [闽ICP备15016446号-3](https://beian.miit.gov.cn/)"
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -120,7 +120,7 @@ languages:
         iconHeight: 35
 
       profileMode:
-        enabled: true
+        enabled: false
         title: 凌虚
         subtitle: "服务器开发工程师<br/>勤学苦练，年复一年"
         imageUrl: "/images/Recovery.jpg" # optional
@@ -175,7 +175,7 @@ languages:
         Title: "\U0001F44B Hi, I'm Johnathan, Nice to meet you."
         Content: "Only software technique articles are in this website. I hope you can get improved here."
       profileMode:
-        enabled: true
+        enabled: false
         title: Johnathan Lin
         subtitle: "Server Development Engineer<br/>Study And Practice, Years Of It"
         imageUrl: "/images/Recovery.jpg" # optional

@@ -12,5 +12,6 @@ url: "/about/"
 我将在这里记录自己一步步成长的过程。
 
 # 联系方式
-Email: windypathblog@gmail.com
-Telegram: @windypath
+Email: [windypathblog@gmail.com](mailto:windypathblog@gmail.com)
+
+Telegram: [@windypath](https://t.me/windypath)
